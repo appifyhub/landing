@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html lang="en" class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html lang="en" class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html lang="en" class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html lang="en"><!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+    <title>AppifyHub</title>
+    <meta name="description" content="When you don't want to write your app dependencies over and over.">
+    <meta name="keywords" content="app,hub,appify,backend,service,prototype">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="darkly.css">
+    <link rel="stylesheet" type="text/css" href="additional.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+
+    <meta property="og:site_name" content="AppifyHub" />
+    <meta property="og:title" content="AppifyHub Status" />
+    <meta property="og:description" content="You shouldn't have this link" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.appifyhub.com" />
+    <meta property="og:image" content="https://www.appifyhub.com/logo.png" />
+    <meta property="og:locale" content="en_GB" />
+</head>
+
+<body>
+
+    <div class="container-sm text-center" style="padding-top: 3rem;">
+
+        <!--suppress CheckImageSize: I want the reduced size for retinas-->
+        <img src="logo.png" alt="Logo" class="img-fluid" width="172" height="172" />
+
+        <h1 class="display-4">AppifyHub</h1>
+
+        <h3 class="lead text-muted">And you shouldn't be here.</h3>
+
+    </div>
+
+    <div class="container-md rounded bg-dark lead padded below-content text-semi-muted">
+        <p class="text-success">
+            But, since you're already here...
+        </p>
+        <br>
+        <p>
+            This is a placeholder page, and I use it for diagnostics.
+            <br><br>
+            On the other hand, <b class="text-success">AppifyHub</b> is a playground, of sorts. A sandbox. I tinker a
+            lot with different app prototypes all the time, and I get tired of writing backend services for all of them...
+            especially if the prototype is not good enough and it never makes it into the open. So, I came up with this.
+            It's a collection of the most common, production-ready services for building apps that need backend support.
+            Also, it's an awesome classroom for me until I get a hang of some new tech or framework that I'm trying out. 🤓
+        </p>
+        <button id="extra-content-button" class="btn btn-outline-info btn-sm" style="margin-top: 2rem;">
+            Read more... &nbsp; <span class="appify-hub-font" style="margin-right: 0;">&#xe800;</span>
+        </button>
+        <section id="extra-content" style="display: none;">
+            <p>
+                When I consider a prototype app to be "mature" enough (i.e. ready for a public release), I'll write a new
+                backend for it, and I'll migrate the app to its new, standalone backend. But until then... these services
+                are the app's backend.
+            </p>
+            <p>
+                If you got here because you <a href="https://angrybyte.me" target="_blank">know me</a> personally, or
+                <a href="https://twitter.com/milosmns" target="_blank">follow me</a>, I might have even given you access
+                to the services to build prototypes of your own.
+                <br><br>
+                In that case, rest assured! 😉 All services:
+            </p>
+            <ul>
+                <li><b>are fully tested</b>: unit, integration, manual</li>
+                <li><b>are self-contained</b>: each runs in a separate <a href="https://www.docker.com/get-started" target="_blank">Docker</a> container</li>
+                <li><b>enable per-app access</b>: an app can access only its resources, other apps are not accessible</li>
+                <li><b>are GDPR-compliant</b>: I use app- and storage-level encryption, data is in EU, zero plain text</li>
+                <li><b>provide security out-of-the-box</b>: I use REST with HTTPS as transport mechanism, with only one port open</li>
+                <li><b>are being open-sourced</b>: I'm slowly going towards 100%, but I need more time</li>
+                <li><b>are easy to reconfigure</b>: for each service I can add/remove new apps within minutes</li>
+                <li><b>are "minimal"</b>: <em>(whatever that means)</em> I use tech appropriate for the service's job and nothing more</li>
+            </ul>
+            <p>
+                Enjoy your stay and don't mess them up. <span style="font-size: 1.5rem;">👋</span>
+            </p>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="services.js" type="text/javascript"></script>
+
+    <!--suppress JSUnresolvedFunction -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // this adds the service blocks to the body
+            $("body").append(servicesHtml());
+            // this shows the extra content
+            const extraContentButton = $("#extra-content-button");
+            extraContentButton.click(function() {
+                $("#extra-content-button").hide(250);
+                $("#extra-content").show(250);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

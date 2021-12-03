@@ -1,0 +1,60 @@
+{
+  "name": "appify-hub",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "289b5f92f23acf1059c93fbf401c1ad5",
+      "css": "down",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "c2314ed1d2314b89f9285c53bcbf2548",
+      "css": "peeps",
+      "code": 61870,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c1f1975c885aa9f3dad7810c53b82074",
+      "css": "tokenizer",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mailer",
+      "code": 61664,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "51fb22f9ff9d7f60c95ef31e4c59502d",
+      "css": "bubbles",
+      "code": 62636,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "414fe97e4af5215a06d29be0f2cecdf5",
+      "css": "pusher",
+      "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "2eaca1555ea50cfe23ab290d1e8a6a75",
+      "css": "timecrypt",
+      "code": 59395,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M509.1 10.1C477.7 35.2 80.7 252.8 80.7 252.8 80.7 252.8 79.1 582.6 80.7 747.4 80.7 749.4 511.7 990 511.7 990L900 732.1 512 916.8 149.5 710.6C149.5 710.6 147.9 432 149.5 292.8L512.2 83.9 896.9 262 509.1 10M734 400.3L515.4 484.6C515.4 484.6 316.1 405.9 303.8 400.4L484.1 532.4 515.1 747.3 546.7 532.5 734 400.3Z",
+        "width": 1000
+      },
+      "search": [
+        "avatar"
+      ]
+    }
+  ]
+}

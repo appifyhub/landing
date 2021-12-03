@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="color-5" bx:pinned="true">
+      <title>Light green</title>
+      <stop style="stop-color: rgb(26, 146, 122);"/>
+    </linearGradient>
+    <linearGradient id="color-1" bx:pinned="true">
+      <title>Pale light green</title>
+      <stop style="stop-color: rgb(117, 150, 111);"/>
+    </linearGradient>
+    <linearGradient id="color-4" bx:pinned="true">
+      <title>Medium green</title>
+      <stop style="stop-color: rgb(30, 90, 67);"/>
+    </linearGradient>
+    <linearGradient id="color-2" bx:pinned="true">
+      <title>Pale medium green</title>
+      <stop style="stop-color: #596c68;"/>
+    </linearGradient>
+    <linearGradient id="color-3" bx:pinned="true">
+      <title>Pale dark green</title>
+      <stop style="stop-color: rgb(61, 79, 79);"/>
+    </linearGradient>
+    <linearGradient id="color-0" bx:pinned="true">
+      <title>Darkest green</title>
+      <stop style="stop-color: rgb(15, 40, 26);"/>
+    </linearGradient>
+    <linearGradient id="gradient-2" bx:pinned="true">
+      <title>Light green</title>
+      <stop offset="0" style="stop-color: rgb(59, 187, 140);"/>
+      <stop offset="1" style="stop-color: rgb(29, 110, 94);"/>
+    </linearGradient>
+    <linearGradient id="gradient-0" bx:pinned="true">
+      <title>Medium green</title>
+      <stop offset="0" style="stop-color: rgb(15, 32, 29);"/>
+      <stop offset="1" style="stop-color: rgb(30, 134, 119);"/>
+    </linearGradient>
+    <linearGradient id="gradient-1" bx:pinned="true">
+      <title>Dark green</title>
+      <stop style="stop-color: rgb(13, 36, 23);" offset="0"/>
+      <stop style="stop-color: rgb(26, 87, 87);" offset="1"/>
+    </linearGradient>
+    <linearGradient id="gradient-1-0" gradientUnits="userSpaceOnUse" x1="378.34" y1="237.03" x2="378.34" y2="441.04" gradientTransform="matrix(0.616352, -0.787471, 0.48906, 0.417175, -55.912468, 557.372864)" xlink:href="#gradient-1"/>
+    <linearGradient id="gradient-1-1" gradientUnits="userSpaceOnUse" x1="171.25" y1="328.29" x2="171.25" y2="443.43" gradientTransform="matrix(0.925368, 0.37907, -0.555079, 1.288926, 229.947739, -169.035904)" xlink:href="#gradient-1"/>
+    <linearGradient id="gradient-1-2" gradientUnits="userSpaceOnUse" x1="311.69" y1="236.69" x2="311.69" y2="434.07" gradientTransform="matrix(0.589434, -0.807815, 0.270304, 0.197232, 12.423637, 581.628723)" xlink:href="#gradient-1"/>
+    <linearGradient id="gradient-1-3" gradientUnits="userSpaceOnUse" x1="185.14" y1="261.16" x2="185.14" y2="427.57" gradientTransform="matrix(0.719896, 0.69408, -0.345215, 0.372524, 175.432953, 96.658417)" xlink:href="#gradient-1"/>
+    <linearGradient id="gradient-0-0" gradientUnits="userSpaceOnUse" x1="202.5" y1="120.95" x2="202.5" y2="427.86" gradientTransform="matrix(-0.025152, 0.999684, -0.508896, -0.075418, 336.554291, 90.992187)" xlink:href="#gradient-0"/>
+    <linearGradient id="gradient-0-1" gradientUnits="userSpaceOnUse" x1="278.8" y1="236.73" x2="278.8" y2="400.29" gradientTransform="matrix(0.846178, -0.5329, 0.289168, 0.495759, -66.90667, 318.190247)" xlink:href="#gradient-0"/>
+    <linearGradient id="gradient-0-2" gradientUnits="userSpaceOnUse" x1="214.69" y1="157.18" x2="214.69" y2="338.13" gradientTransform="matrix(-0.080058, 0.996792, -1.161191, -0.159218, 555.919495, 87.048714)" xlink:href="#gradient-0"/>
+    <linearGradient id="gradient-2-0" gradientUnits="userSpaceOnUse" x1="296.28" y1="129.37" x2="296.28" y2="308.46" gradientTransform="matrix(-0.502499, 0.86458, -0.403186, -0.288729, 532.657104, 56.873581)" xlink:href="#gradient-2"/>
+    <linearGradient id="gradient-2-1" gradientUnits="userSpaceOnUse" x1="249.7" y1="84.48" x2="249.7" y2="232.7" gradientTransform="matrix(-0.642774, 0.766056, -0.512494, -0.434209, 492.687897, 49.566254)" xlink:href="#gradient-2"/>
+  </defs>
+  <g transform="matrix(1.218305, 0, 0, 1.218305, -60.003712, -71.578018)" style="">
+    <path d="M 212.93 332.59 C 221.81 335.18 231.19 336.61 240.9 336.67 C 296.78 337.07 342.48 292.43 343.59 236.73 C 344.31 242.99 344.68 249.35 344.68 255.8 C 344.68 318.01 310.25 372.18 259.41 400.29 C 238.68 382.16 222.54 358.94 212.93 332.59 Z" style="vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; fill: url(#gradient-0-1); stroke: rgb(23, 88, 78);"/>
+    <path d="M 296.61 141.84 L 311.37 171.54 L 312.74 174.3 C 312.76 174.33 312.77 174.37 312.79 174.4 L 337.65 224.43 C 337.38 259.46 319.44 290.3 292.31 308.46 L 254.91 233.19 C 255.2 232.26 255.29 231.93 255.06 232.7 C 278.31 214 293.2 185.32 293.2 153.16 C 293.2 144.97 292.23 137 290.41 129.37 L 296.61 141.84 Z" style="vector-effect: non-scaling-stroke; fill: url(#gradient-2-0); stroke: rgb(60, 170, 138);"/>
+    <path d="M 248.65 204.69 C 248.65 204.73 248.65 204.78 248.65 204.82 L 188.01 329.95 C 191.41 340.86 191.41 340.86 188.01 329.95 L 188.09 329.78 C 183.31 314.33 180.73 297.91 180.73 280.89 C 180.73 231.77 202.19 187.66 236.25 157.44 C 234.45 154.14 248.33 183.55 248.65 204.69 Z" style="vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; fill: url(#gradient-0-2); stroke: rgb(24, 91, 81);"/>
+    <path d="M 202.62 120.95 C 216.6 130.14 228.2 142.67 236.25 157.44 C 202.19 187.66 180.73 231.77 180.73 280.89 C 180.73 297.91 183.31 314.33 188.09 329.78 L 188.01 329.95 C 198.15 362.47 218.09 390.66 244.36 411.09 C 252.45 417.4 261.14 422.97 270.34 427.7 C 270.2 427.75 270.05 427.81 269.91 427.86 C 269.32 427.77 268.74 427.67 268.16 427.57 C 202.76 393.17 154.1 332.7 134.66 261.16 Z" style="vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; fill: url(#gradient-0-0); stroke: rgb(22, 77, 69);"/>
+    <path d="M 109.94 438.5 C 88.61 435.51 72.6 419.61 72.6 398.07 C 72.6 392.67 73.69 387.53 75.67 382.86 L 77.38 379.33 C 78.31 377.64 79.73 374.49 79.73 374.49 L 102.12 328.29 C 142.64 380.28 201.99 416.88 269.91 427.86 C 206.83 451.14 126.51 442.52 109.94 438.5 Z" style="vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; fill: url(#gradient-1-1); stroke: rgb(18, 54, 46);"/>
+    <path d="M 293.2 153.16 C 293.2 185.32 278.31 214 255.06 232.7 C 257.86 223.38 259.37 213.5 259.37 203.26 C 259.37 164.61 237.87 130.99 206.19 113.68 C 208.93 103.14 216.05 93.8 226.58 88.56 C 245.87 78.98 269.28 86.84 278.86 106.13 L 290.41 129.37 C 292.23 137 293.2 144.97 293.2 153.16 Z" style="vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; fill: url(#gradient-2-1); stroke: rgb(64, 183, 146);"/>
+    <path d="M 102.12 328.29 L 134.66 261.16 C 154.1 332.7 202.76 393.17 268.16 427.57 C 200.97 416.25 142.29 379.83 102.12 328.29 Z" style="vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; fill: url(#gradient-1-3); stroke: rgb(16, 50, 40);"/>
+    <path d="M 366.84 441.04 C 350.69 440.93 335.09 438.5 320.37 434.07 C 358.24 392.83 374.17 333.33 357.2 275.71 C 353.26 262.34 348.9 249.35 344.03 237.03 L 436.31 426.28 C 415.15 435.92 391.61 441.22 366.84 441.04 Z" style="vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; paint-order: fill; fill: url(#gradient-1-0); stroke: rgb(16, 49, 39);"/>
+    <path d="M 357.2 275.71 C 374.17 333.33 358.24 392.83 320.37 434.07 C 298.17 428.46 267.34 408.52 259.41 400.29 C 310.25 372.18 344.68 318.01 344.68 255.8 C 344.68 249.35 344.31 242.99 343.59 236.73 C 343.59 236.54 344.03 237.03 344.03 237.03 C 348.9 249.35 353.26 262.34 357.2 275.71 Z" style="vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; fill: url(#gradient-1-2); stroke: rgb(19, 59, 51);"/>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+* {
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    /* noinspection CssUnknownProperty */
+    -ms-transition: all 0.25s ease;
+}
+
+html, body {
+    background: rgb(5, 9, 10);
+    background: -moz-linear-gradient(135deg, rgba(5, 9, 10, 1) 0%, rgba(19, 33, 36, 1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(5, 9, 10, 1) 0%, rgba(19, 33, 36, 1) 100%);
+    background: linear-gradient(135deg, rgba(5, 9, 10, 1) 0%, rgba(19, 33, 36, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#05090a", endColorstr="#132124", GradientType=1);
+}
+
+body {
+    margin-bottom: 3rem;
+}
+
+.container-md {
+    border-radius: 1rem !important;
+}
+
+.text-semi-muted {
+    color: rgb(220, 220, 220);
+}
+
+.bg-dark {
+    background: rgb(5, 10, 10);
+    background: -moz-linear-gradient(315deg, rgba(5, 10, 10, 1) 0%, rgba(18, 37, 35, 1) 100%);
+    background: -webkit-linear-gradient(315deg, rgba(5, 10, 10, 1) 0%, rgba(18, 37, 35, 1) 100%);
+    background: linear-gradient(315deg, rgba(5, 10, 10, 1) 0%, rgba(18, 37, 35, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050a0a", endColorstr="#122523", GradientType=1);
+}
+
+.bg-light {
+    background: rgb(17, 23, 24);
+    background: -moz-linear-gradient(315deg, rgba(17, 23, 24, 1) 0%, rgba(13, 42, 48, 1) 50%, rgba(17, 23, 24, 1) 100%);
+    background: -webkit-linear-gradient(315deg, rgba(17, 23, 24, 1) 0%, rgba(13, 42, 48, 1) 50%, rgba(17, 23, 24, 1) 100%);
+    background: linear-gradient(315deg, rgba(17, 23, 24, 1) 0%, rgba(13, 42, 48, 1) 50%, rgba(17, 23, 24, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111718", endColorstr="#111718", GradientType=1);
+}
+
+a {
+    text-decoration: underline;
+}
+
+.padded {
+    padding: 3rem;
+}
+
+.below-content {
+    margin-top: 3rem;
+}
+
+.cell {
+    padding-bottom: 2rem !important;
+    border-radius: 1rem !important;
+}
+
+@font-face {
+    font-family: 'appify-hub';
+    src: url('appify-hub-font/font/appify-hub.eot?42508983');
+    src: url('appify-hub-font/font/appify-hub.eot?42508983#iefix') format('embedded-opentype'),
+         url('appify-hub-font/font/appify-hub.woff?42508983') format('woff'),
+         url('appify-hub-font/font/appify-hub.ttf?42508983') format('truetype'),
+         url('appify-hub-font/font/appify-hub.svg?42508983#appify-hub') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.appify-hub-font {
+    font-family: "appify-hub", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1rem;
+    margin-right: 2rem;
+    text-align: center;
+
+    /* For safety - reset parent styles, that can break glyph codes */
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1rem;
+
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
