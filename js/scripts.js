@@ -1,14 +1,22 @@
 $(function () {
-
-    // init feather icons
+    // Initialize feather icons
     feather.replace();
 
-    // init tooltip & popovers
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-toggle="popover"]').popover();
+    // Navbar coloring on mobile
+    $(document).ready(function () {
+        // Listen for the show event on #navbarCollapse
+        $('#navbarCollapse').on('show.bs.collapse', function () {
+            $('.smart-scroll').addClass('opened');
+        });
 
-    //page scroll
-    $('a.page-scroll').bind('click', function (event) {
+        // Listen for the hide event on #navbarCollapse
+        $('#navbarCollapse').on('hide.bs.collapse', function () {
+            $('.smart-scroll').removeClass('opened');
+        });
+    });
+
+    // Navbar scrolling to anchors
+    $('.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 20
@@ -16,21 +24,11 @@ $(function () {
         event.preventDefault();
     });
 
-    // slick slider
-    $('.slick-about').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        dots: true,
-        arrows: false
-    });
-
-    //toggle scroll menu
+    // Navbar show/hide toggle
     var scrollTop = 0;
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        //adjust menu background
+        // Adjust menu background
         if (scroll > 80) {
             if (scroll > scrollTop) {
                 $('.smart-scroll').addClass('scrolling').removeClass('up');
@@ -44,7 +42,7 @@ $(function () {
 
         scrollTop = scroll;
 
-        // adjust scroll to top
+        // Adjust scroll to top
         if (scroll >= 600) {
             $('.scroll-top').addClass('active');
         } else {
@@ -53,21 +51,20 @@ $(function () {
         return false;
     });
 
-    // scroll top top
+    // Scroll to top clicks
     $('.scroll-top').click(function () {
         $('html, body').stop().animate({
             scrollTop: 0
         }, 1000);
     });
 
-    /**Theme switcher - DEMO PURPOSE ONLY */
-    $('.switcher-trigger').click(function () {
-        $('.switcher-wrap').toggleClass('active');
-    });
-    $('.color-switcher ul li').click(function () {
-        var color = $(this).attr('data-color');
-        $('#theme-color').attr("href", "css/" + color + ".css");
-        $('.color-switcher ul li').removeClass('active');
-        $(this).addClass('active');
+    // Initialize slick carousel
+    $('.slick-about').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: false,
+        arrows: false,
     });
 });
