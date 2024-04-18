@@ -1,0 +1,130 @@
+:root {
+  --aurora-bg-1: #000000;
+  --aurora-bg-2: #031d22;
+
+  --aurora-color-1: #0ccbd5;
+  --aurora-color-2: #5897a4;
+  --aurora-color-3: #084759;
+  --aurora-color-4: #0d2f2a;
+}
+
+.auroras {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(110deg, var(--aurora-bg-1), var(--aurora-bg-2));
+}
+
+.aurora-1 {
+  position: absolute;
+  filter: blur(6rem);
+  -webkit-filter: blur(6rem);
+  opacity: 0.1;
+  width: 40rem;
+  height: 40rem;
+  left: -4rem;
+  top: 10rem;
+  background-color: var(--aurora-color-1);
+  mix-blend-mode: hard-light;
+
+  animation: fly 20s linear infinite;
+  transform: rotate(0) translate(380px) rotate(0);
+}
+
+.aurora-2 {
+  position: absolute;
+  filter: blur(6rem);
+  -webkit-filter: blur(6rem);
+  opacity: 0.2;
+  width: 50rem;
+  height: 30rem;
+  background-color: var(--aurora-color-2);
+  bottom: -3rem;
+  left: 2rem;
+  mix-blend-mode: hard-light;
+
+  animation: flyPlus 20s linear infinite;
+  -webkit-animation: flyPlus 20s linear infinite;
+  transform: rotate(0) translate(200px) rotate(0);
+  -webkit-transform: rotate(0) translate(200px) rotate(0);
+  -moz-transform: rotate(0) translate(200px) rotate(0);
+  -ms-transform: rotate(0) translate(200px) rotate(0);
+  -o-transform: rotate(0) translate(200px) rotate(0);
+}
+
+.aurora-3 {
+  position: absolute;
+  filter: blur(6rem);
+  -webkit-filter: blur(6rem);
+  opacity: 0.2;
+  border-radius: 100%;
+  width: 50rem;
+  height: 50rem;
+  bottom: -3rem;
+  right: -4rem;
+  background-color: var(--aurora-color-3);
+
+  animation: flyPlus 20s linear infinite;
+  -webkit-animation: flyPlus 20s linear infinite;
+  transform: rotate(0) translate(200px) rotate(0);
+  -webkit-transform: rotate(0) translate(200px) rotate(0);
+  -moz-transform: rotate(0) translate(200px) rotate(0);
+  -ms-transform: rotate(0) translate(200px) rotate(0);
+  -o-transform: rotate(0) translate(200px) rotate(0);
+}
+
+.aurora-4 {
+  position: absolute;
+  filter: blur(7rem);
+  -webkit-filter: blur(7rem);
+  opacity: 0.8;
+  border-radius: 100%;
+  width: 50rem;
+  height: 50rem;
+  top: 30%;
+  left: 30%;
+  background-color: var(--aurora-color-4);
+
+  animation: flyPlus 15s linear infinite;
+  -webkit-animation: flyPlus 15s linear infinite;
+  transform: rotate(0) translate(200px) rotate(0);
+  -webkit-transform: rotate(0) translate(200px) rotate(0);
+  -moz-transform: rotate(0) translate(200px) rotate(0);
+  -ms-transform: rotate(0) translate(200px) rotate(0);
+  -o-transform: rotate(0) translate(200px) rotate(0);
+  mix-blend-mode: hard-light;
+}
+
+/* 5 is like 4, but moves left-right on the bottom of the view */
+.aurora-5 {
+  position: absolute;
+  filter: blur(4rem);
+  -webkit-filter: blur(4rem);
+  opacity: 1;
+  border-radius: 100%;
+  width: 200%;
+  height: 20rem;
+  bottom: -15rem;
+  left: -50%;
+  mix-blend-mode: color-burn;
+  background-color: black;
+}
+
+@keyframes fly {
+  100% {
+    transform: rotate(2turn) translate(400px) rotate(-2turn);
+    -webkit-transform: rotate(2turn) translate(400px) rotate(-2turn);
+    -moz-transform: rotate(2turn) translate(400px) rotate(-2turn);
+    -ms-transform: rotate(2turn) translate(400px) rotate(-2turn);
+    -o-transform: rotate(2turn) translate(400px) rotate(-2turn);
+  }
+}
+
+@keyframes flyPlus {
+  100% {
+    transform: rotate(-2turn) translate(200px) rotate(2turn);
+    -webkit-transform: rotate(-2turn) translate(200px) rotate(2turn);
+    -moz-transform: rotate(-2turn) translate(200px) rotate(2turn);
+    -ms-transform: rotate(-2turn) translate(200px) rotate(2turn);
+    -o-transform: rotate(-2turn) translate(200px) rotate(2turn);
+  }
+}
