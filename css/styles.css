@@ -3,7 +3,7 @@
   --dark-slate-gray: #1a5555;
   --pine-green: #1b7265;
   --mint: #3bb68b;
-  --teal: #1de9b6;
+  --teal: #4ae5c3;
 
   --light: #ececec;
   --light-dimmed: #ecececc0;
@@ -11,8 +11,9 @@
   --primary: var(--mint);
   --secondary: white;
   --highlight: var(--teal);
-  --highlight-dimmed: #1de9b6cc;
-  --highlight-dimmed-extra: #1de9b660;
+  --highlight-dimmed: #4ae5c3cc;
+  --highlight-dimmed-more: #4ae5c360;
+  --highlight-dimmed-ultra: #4ae5c320;
   --primary-dimmed: #3bb68b80;
 
   --typeface-text: "Noto Sans", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -105,8 +106,8 @@ h6,
 
 .heading-black img:focus,
 .heading-black img:hover {
-  -webkit-filter: drop-shadow(0 0 30px var(--highlight-dimmed-extra));
-  filter: drop-shadow(0 0 30px var(--highlight-dimmed-extra));
+  -webkit-filter: drop-shadow(0 0 30px var(--highlight-dimmed-more));
+  filter: drop-shadow(0 0 30px var(--highlight-dimmed-more));
 }
 
 p {
@@ -244,7 +245,7 @@ a>code {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -252,69 +253,75 @@ a>code {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 2px solid transparent;
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
+  border: 0.5px solid transparent;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
   font-family: var(--typeface-title);
   line-height: 1.5;
-  border-radius: 1rem;
+  border-radius: 0.9rem;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
   text-decoration: none;
-}
-
-.btn:focus {
   outline: 0;
-  box-shadow: none;
-}
-
-.btn:disabled {
-  opacity: 0.65;
-}
-
-.btn:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-
-.btn:not(:disabled):not(.disabled):active {
-  background-image: none;
 }
 
 .btn-primary {
-  color: white;
-  background-color: var(--primary);
-  border-color: var(--primary);
+  border: 0.5px solid var(--dark);
+  color: black;
+  background: -webkit-linear-gradient(300deg,
+      transparent,
+      #01484f,
+      var(--primary),
+      #01484f,
+      transparent);
+  background-position: 0 0;
+  background-size: 300% auto;
+  -webkit-animation: gradient_move 15s ease infinite;
+  animation: gradient_move 15s ease infinite;
+  transition: all 0.7s;
 }
 
-.btn-primary:hover {
-  scale: 1.02;
-  color: white;
-  background-color: var(--highlight);
-  border-color: var(--highlight);
-}
-
+.btn-primary:hover,
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.7rem rgba(29, 233, 182, 0.5);
-}
-
-.btn-primary:disabled {
-  color: #11171a;
-  background-color: #1de9b6;
-  border-color: #1de9b6;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active {
-  scale: 1.0;
   color: white;
-  background-color: #13c095;
-  border-color: #12b58c;
+  background-color: var(--dark-slate-gray);
+  box-shadow: 0 0 160px var(--highlight-dimmed-ultra);
 }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus {
-  box-shadow: 0 0 0 0.2rem rgba(29, 233, 182, 0.5);
+.btn-primary:active {
+  scale: 0.98;
+}
+
+@-webkit-keyframes gradient_move {
+  0% {
+    background-position: 0% 92%;
+  }
+
+  50% {
+    background-position: 100% 9%;
+  }
+
+  100% {
+    background-position: 0% 92%;
+  }
+}
+
+@keyframes gradient_move {
+  0% {
+    background-position: 0% 92%;
+  }
+
+  50% {
+    background-position: 100% 9%;
+  }
+
+  100% {
+    background-position: 0% 92%;
+  }
 }
 
 .btn-info {
@@ -393,7 +400,7 @@ a>code {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-  text-shadow: 0 0 50px var(--highlight-dimmed), 0 0 20px var(--highlight-dimmed-extra);
+  text-shadow: 0 0 50px var(--highlight-dimmed), 0 0 20px var(--highlight-dimmed-more);
 }
 
 .navbar-dark .navbar-nav .nav-link:active {
@@ -795,24 +802,6 @@ body {
 
 .font-weight-medium {
   font-weight: 600;
-}
-
-.btn {
-  text-transform: uppercase;
-  font-size: 15px;
-}
-
-.btn.btn-primary {
-  box-shadow: 0 8px 16px rgba(29, 233, 182, 0.3);
-  transition: all .2s ease-out;
-}
-
-.btn.btn-primary:hover {
-  box-shadow: 0 8px 20px rgba(29, 233, 182, 0.35);
-}
-
-.btn.btn-primary:active {
-  box-shadow: none !important;
 }
 
 .btn.btn-info {
