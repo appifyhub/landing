@@ -804,12 +804,16 @@ body {
   border-color: black;
 }
 
-.small-xl {
-  font-size: 90%;
+.smaller {
+  font-size: 70%;
+}
+
+.smaller-less {
+  font-size: 80%;
 }
 
 .font-weight-medium {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .btn.btn-info {
