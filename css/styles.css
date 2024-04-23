@@ -21,6 +21,11 @@
   --typeface-mono: "Cousine", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+::selection {
+  background: var(--highlight);
+  color: var(--dark-green);
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -38,6 +43,7 @@ body {
   line-height: 1.5;
   color: var(--light);
   text-align: left;
+  border-color: black;
   background-color: black;
 }
 
@@ -798,10 +804,6 @@ a.text-light:focus {
 
 .text-muted {
   color: #88a1a9 !important;
-}
-
-body {
-  border-color: black;
 }
 
 .smaller {

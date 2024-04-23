@@ -1,0 +1,32 @@
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body * {
+  background: none !important;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+h3,
+h4 {
+  margin-top: 2rem;
+}
+
+h4,
+b {
+  color: #aeffd2;
+  font-weight: 500;
+}
+
+p {
+  text-align: justify;
+}
