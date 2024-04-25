@@ -3,24 +3,24 @@
 
 <head>
     <!-- Core metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description"
-        content="AppifyHub: Enabling developers to bring app ideas to life without the backend hassle. Explore essential services for app prototyping like authentication, authorization, and user communication – all open-source.">
+        content="AppifyHub: Enabling developers to bring app ideas to life without the backend hassle. Explore essential services for app prototyping like authentication, authorization, and user communication – all open-source." />
     <meta name="keywords"
-        content="AppifyHub, app prototyping, developer tools, open-source, authentication, user management, sms, email, push, app development, no backend">
+        content="AppifyHub, app prototyping, developer tools, open-source, authentication, user management, sms, email, push, app development, no backend" />
     <title>AppifyHub · Enabling App Developers</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#1b7265">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#1b7265" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#000000" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,14 +29,15 @@
         href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" />
 
     <!-- Vendor styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/aurora.css">
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/aurora.css" />
 </head>
 
 <body>
@@ -349,6 +350,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="module" src="js/cookieconsent-config.js" defer></script>
+
+    <!-- Analytics -->
+    <script async type="text/plain" data-category="analytics"
+        src="https://www.googletagmanager.com/gtag/js?id=G-6MV2ZG3WDM"></script>
+    <script async type="text/plain" data-category="analytics">
+        console.log("Enabling Google Analytics…")
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6MV2ZG3WDM');
+    </script>
+    <script async type="text/plain" data-category="!analytics">
+        gtag = function() { console.log("Allow cookies to enable Google Analytics"); };
+        
+        console.log("Google Analytics is now disabled.");
+    </script>
 </body>
 
 </html>

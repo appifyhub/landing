@@ -59,12 +59,15 @@ $(function () {
     });
 
     // Initialize slick carousel
-    $('.slick-about').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        dots: false,
-        arrows: false,
-    });
+    let slickSlider = $('.slick-about');
+    if (slickSlider.slick) {
+        slickSlider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: false,
+            arrows: false,
+        });
+    }
 });

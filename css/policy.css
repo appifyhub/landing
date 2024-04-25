@@ -4,8 +4,8 @@ body {
   background-size: cover;
 }
 
-body * {
-  background: none !important;
+.container {
+  background: none;
 }
 
 h1 {
