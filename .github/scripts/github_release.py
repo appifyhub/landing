@@ -1,8 +1,7 @@
 import os
 import re
 import requests
-from datetime import datetime
-from datetime import UTC
+import datetime
 from typing import List
 
 # Environment setup and validations
@@ -28,7 +27,7 @@ commitish = os.getenv('GITHUB_SHA', default_commitish)
 # Determine the tag based on build quality
 tag = f"v{version}.{build_quality.lower()}"
 if build_quality == 'Debug':
-    timestamp = datetime.now(UTC).strftime('%Y_%m_%d_%H_%M_%S')
+    timestamp = datetime.datetime.now(datetime.UTC).strftime('%Y_%m_%d_%H_%M_%S')
     tag += f".{timestamp}"
 
 # Configure the release parameters
