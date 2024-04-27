@@ -62,7 +62,9 @@ jobs:
           GITHUB_SHA: ${{ env.GITHUB_SHA }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ env.GITHUB_REPOSITORY }}
-        run: python .github/scripts/github_release.py
+        run: |
+          pip install -r .github/scripts/requirements.txt
+          python .github/scripts/github_release.py
 
       - name: Comment build information
         env:
