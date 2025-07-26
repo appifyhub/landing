@@ -1,17 +1,19 @@
 $(function () {
-    // Initialize feather icons
-    feather.replace();
+    // Initialize lucide icons
+    lucide.createIcons();
 
     // Navbar coloring on mobile
     $(document).ready(function () {
         // Listen for the show event on #navbarCollapse
         $('#navbarCollapse').on('show.bs.collapse', function () {
             $('.smart-scroll').addClass('opened');
+            $('body').addClass('mobile-menu-open');
         });
 
         // Listen for the hide event on #navbarCollapse
         $('#navbarCollapse').on('hide.bs.collapse', function () {
             $('.smart-scroll').removeClass('opened');
+            $('body').removeClass('mobile-menu-open');
         });
     });
 

@@ -51,29 +51,76 @@
                 <button type="button" class="navbar-toggler navbar-toggler-right border-0" data-toggle="collapse"
                     data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span data-feather="grid"></span>
+                    <i data-lucide="menu"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="https://api.cloud.appifyhub.com/docs/index.html"
-                                target="_blank">API Docs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="https://github.com/appifyhub/monolith/blob/main/sdk"
-                                target="_blank">SDK</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" style="color: #ff7289;" href="https://agent.appifyhub.com" target="_blank">
-                                The Agent
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Apps <span class="badge badge-new">NEW</span>
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="appsDropdown">
+                                <a class="dropdown-item" href="https://agent.appifyhub.com" target="_blank">The
+                                Agent <span class="badge badge-new">NEW</span>
+                                </a>
+                                <a class="dropdown-item" href="https://github.com/appifyhub/timecrypt"
+                                    target="_blank">Timecrypt</a>
+                                <a class="dropdown-item"
+                                    href="https://play.google.com/store/apps/details?id=com.vaptim.wallpapers"
+                                    target="_blank">Material Wallpapers: Infinite</a>
+                                <a class="dropdown-item"
+                                    href="https://play.google.com/store/apps/details?id=me.angrybyte.contactsgenerator"
+                                    target="_blank">Lorem Contacts</a>
+                                <a class="dropdown-item" href="https://picword-vapteam.en.download.it"
+                                    target="_blank">Picword: Photo-lock your PC</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll d-flex flex-row align-items-center cta"
-                                href="https://github.com/appifyhub" target="_blank">
-                                <em data-feather="github" width="18" height="18" class="mr-2"></em>
-                                Sources
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="devToolsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tools
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="devToolsDropdown">
+                                <a class="dropdown-item" href="https://github.com/appifyhub/monolith"
+                                    target="_blank">Project Bootstrap API</a>
+                                <a class="dropdown-item" href="https://github.com/appifyhub/code-stats"
+                                    target="_blank">Code Stats</a>
+                                <a class="dropdown-item" href="https://github.com/appifyhub/contacts-generator-android"
+                                    target="_blank">Contacts Generator</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="androidDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Mobile
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="androidDropdown">
+                                <a class="dropdown-item" href="https://github.com/appifyhub/circular-slider-android"
+                                    target="_blank">Circular Slider</a>
+                                <a class="dropdown-item" href="https://github.com/appifyhub/actual-number-picker"
+                                    target="_blank">Actual Number Picker</a>
+                                <a class="dropdown-item" href="https://github.com/appifyhub/goose"
+                                    target="_blank">Goose: Link Previews</a>
+                                <a class="dropdown-item" href="https://github.com/appifyhub/silly-android"
+                                    target="_blank">Silly Android</a>
+                                <a class="dropdown-item" href="https://github.com/appifyhub/blinking-image-view"
+                                    target="_blank">Blinking Image View</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Community
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="communityDropdown">
+                                <a class="dropdown-item" href="https://github.com/appifyhub" target="_blank">All
+                                    Sources</a>
+                                <a class="dropdown-item" href="https://api.cloud.appifyhub.com/docs/index.html"
+                                    target="_blank">Bootstrap API Docs</a>
+                                <a class="dropdown-item" href="https://github.com/appifyhub/monolith/blob/main/sdk"
+                                    target="_blank">Bootstrap SDK</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -92,15 +139,15 @@
 
             <div class="row vh-md-100">
                 <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
-                    <h1 class="heading-black">Enabling Developers to Focus on What Matters</h1>
+                    <h1 class="heading-black">Open-Source Tools for Developers & Enthusiasts</h1>
                     <p class="lead py-3">
-                        Cloud services for rapid app prototyping without backend code.
-                        Ideal for Spartan developers bringing new app ideas to life.
+                        Free, open-source apps and tools built by developers, for developers.
+                        Download, use, contribute, and help shape the future of software craftsmanship.
                     </p>
                     <button href="#features"
                         class="btn btn-primary d-inline-flex flex-row align-items-center page-scroll">
-                        LEARN HOW
-                        <em class="ml-2" data-feather="arrow-right"></em>
+                        SHOW ME MORE
+                        <i class="ml-2" data-lucide="chevrons-down"></i>
                     </button>
                 </div>
             </div>
@@ -112,11 +159,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mx-auto text-center">
-                    <h2 class="heading-black">Unblock your app ideas</h2>
+                    <h2 class="heading-black">Explore the Open-Source Ecosystem</h2>
                     <p class="text-muted lead">
-                        Straightforward, open-source, and designed for the
-                        hard-code developer who values efficiency and innovation.
-                        AWS Amplify is the younger (but larger) commercial brother of AppifyHub.
+                        A collection of open-source tools and apps designed by developers who understand
+                        developers' needs. From productivity apps and online services, to various libraries
+                        – everything is free to use and contribute to.
                     </p>
                 </div>
             </div>
@@ -126,49 +173,49 @@
                         <div class="col-md-6 box">
                             <div class="icon-box box-blue">
                                 <div class="icon-box-inner">
-                                    <span data-feather="user" width="35" height="35"></span>
+                                    <i data-lucide="app-window-mac" width="35" height="35"></i>
                                 </div>
                             </div>
-                            <h5>Sign-Up and Authorization</h5>
+                            <h5>Apps & Productivity</h5>
                             <p class="text-muted">
-                                Quickly integrate a simple sign-up and login system,
-                                enabling you to safeguard user data with minimal effort.
+                                Ready-to-use applications that boost productivity and solve problems in fun ways.
+                                AI agents, time management tools, encrypted messaging, and more – all open-source.
                             </p>
                         </div>
                         <div class="col-md-6 box">
                             <div class="icon-box box-teal">
                                 <div class="icon-box-inner">
-                                    <span data-feather="message-circle" width="35" height="35"></span>
+                                    <i data-lucide="tablet-smartphone" width="35" height="35"></i>
                                 </div>
                             </div>
-                            <h5>Multi-Channel Communication</h5>
+                            <h5>Mobile Libraries</h5>
                             <p class="text-muted">
-                                Use the API to easily communicate with your users via SMS,
-                                email, or push — no additional integrations needed.
+                                Custom UI components, lifecycle managers, and utilities for mobile development.
+                                Save time with production-tested libraries that improve your mobile apps.
                             </p>
                         </div>
                         <div class="col-md-6 box">
                             <div class="icon-box box-yellow">
                                 <div class="icon-box-inner">
-                                    <span data-feather="lock" width="35" height="35"></span>
+                                    <i data-lucide="code-xml" width="35" height="35"></i>
                                 </div>
                             </div>
-                            <h5>Role-Based Access Control</h5>
+                            <h5>Developer Tools</h5>
                             <p class="text-muted">
-                                Implement access controls to ensure your users can only navigate
-                                and use what they're authorized to.
+                                Cloud services, App Bootstrapping APIs, Developer Utilities – check out the tools
+                                built to accelerate your project launch and help you build your next workflow.
                             </p>
                         </div>
                         <div class="col-md-6 box">
                             <div class="icon-box box-red">
                                 <div class="icon-box-inner">
-                                    <span data-feather="code" width="35" height="35"></span>
+                                    <i data-lucide="heart-handshake" width="35" height="35"></i>
                                 </div>
                             </div>
-                            <h5>100% Open-Source</h5>
+                            <h5>Community-Driven</h5>
                             <p class="text-muted">
-                                View, edit and propose changes the the source code,
-                                further empowering app developers worldwide.
+                                Built by developers, for developers. Contribute code, report issues,
+                                or suggest new features. Your input shapes the future of these tools.
                             </p>
                         </div>
                     </div>
@@ -180,22 +227,28 @@
     <!-- Carousel -->
     <section class="pt-6 pb-7 bg-dark section-angle top-right bottom-right" id="demo">
         <div class="container">
-            <div class="row px-3 py-4 mb-4">
+            <div class="row px-3 py-2">
                 <div class="col-md-10 mx-auto text-center">
-                    <h2 class="heading-black">Getting Started</h2>
-                    <p class="text-muted lead">
-                        To keep things
-                        <a href="https://status.appifyhub.com" target="_blank">
-                            running smoothly
-                        </a>,
-                        all current sign-ups on AppifyHub are invite-only.
-                        You can still self-host and explore everything the service has to offer.
+                    <h2 class="heading-black">Bootstrap API: Getting Started</h2>
+                    <p class="text-muted lead" style="margin-top: 3rem;">
+                        The Bootstrap API is free to use on an invite-only basis (for now). It allows you to
+                        quickly prototype your next app idea without the hassle of setting up a backend.
+                        Download the source to host it yourself, or integrate with AppifyHub's instances!
+                        Support developers by trying out these tools and sharing your feedback.
                     </p>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row px-3 py-4 mb-4">
+                <div class="col-md-10 mb-5 mx-auto text-center">
+                    <h3>Core features out of the box</h3>
+                    <p class="text-muted">
+                        With an emphasis on simplicity, but also on convention over configuration,
+                        these Bootstrap APIs are designed to be intuitive and straightforward,
+                        enabling a faster launch of your app.
+                    </p>
+                </div>
+                <div class="col-md-8 mx-auto text-center">
                     <div class="slick-about">
                         <img src="img/demo-health-check.png" class="img-fluid rounded d-block mx-auto" alt="Sample 1" />
                         <img src="img/demo-creating-project.png" class="img-fluid rounded d-block mx-auto"
@@ -205,30 +258,20 @@
                         <img src="img/demo-user-login.png" class="img-fluid rounded d-block mx-auto" alt="Sample 4" />
                     </div>
                 </div>
-                <div class="col-md-6 ml-auto pt-3">
-                    <h4>Clear and Intuitive API</h4>
-                    <p class="mb-5 text-muted">
-                        With an emphasis on simplicity and convention over configuration,
-                        AppifyHub's API is designed to be intuitive and straightforward,
-                        enabling faster integration with your app.
-                    </p>
-                </div>
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-4">
                 <div class="col-md-10 mx-auto text-center">
-                    <h3 class="pb-3">Handholding not allowed!</h3>
+                    <h3 class="pb-3">Spartan: for hard-core developers</h3>
                     <p class="text-muted">
-                        Instead of guiding you through an array of step-by-step tutorials,
-                        you are invited to directly take a look at
-                        <a href="https://api.cloud.appifyhub.com/docs/index.html" target="_blank">API documentation</a>.
-
-                        Guided by its Spartan philosophy, AppifyHub's "monolith" service is
-                        <a href="https://github.com/appifyhub/monolith/tree/main/docker" target="_blank">
-                            easy to deploy
-                        </a>
-                        and provides well-documented
+                        With no lengthy tutorials or complex setup processes, it's clear that these Project Bootstrapping
+                        tools are designed to be intuitive and well-documented. Check out the
+                        <a href="https://api.cloud.appifyhub.com/docs/index.html" target="_blank">API documentation</a>,
+                        or explore the
                         <a href="https://github.com/appifyhub/monolith" target="_blank">source code on GitHub</a>.
+                        For self-hosting, there's a simple Docker image available, making the APIs
+                        <a href="https://github.com/appifyhub/monolith/tree/main/docker" target="_blank">easy to deploy</a>,
+                        build, and contribute to.
                     </p>
                 </div>
             </div>
@@ -251,7 +294,7 @@
                         <div class="col-md-6 mb-4">
                             <h5>Is the code really free?</h5>
                             <p class="text-muted">
-                                Absolutely. AppifyHub is open-source under the MIT License, which permits commercial use
+                                Absolutely. AppifyHub is open-source under the MIT and Apache Licenses, which permits commercial use.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
@@ -261,38 +304,37 @@
                                 <a href="https://github.com/appifyhub/monolith/issues/new?template=feature_request.md"
                                     target="_blank">
                                     open an issue on GitHub
-                                </a>.
+                                </a> here, or at the respective repository of the tool you're using.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <h5>Can I pay to use AppifyHub?</h5>
+                            <h5>How can I support these projects?</h5>
                             <p class="text-muted">
-                                Not right now. The managed services at <b>*.appifyhub.com</b>
-                                (live or pre-live) are not yet available for commercial use.
+                                Download and use the apps, star the repositories and sponsor developers on GitHub,
+                                contribute code, report bugs, or spread the word to other developers.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <h5>How is the data stored?</h5>
+                            <h5>Are these tools production-ready?</h5>
                             <p class="text-muted">
-                                Your data's storage location depends on your deployment.
-                                AppifyHub data is hosted in the EU on European servers.
-                                By default, data is not backed up or encrypted at rest.
+                                Yes! These tools are tested and purpose-built for use in production.
+                                Each project includes some documentation, a README, and some usage instructions.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <h5>Can I integrate AppifyHub with other services?</h5>
+                            <h5>Can I modify and redistribute these tools?</h5>
                             <p class="text-muted">
-                                Yes, AppifyHub is built for flexibility, supporting integrations with a variety of
-                                third-party services using REST or SDKs.
+                                Absolutely! Everything is open-source under relatively permissive licenses.
+                                Fork, modify, and distribute as you see fit, following each project's license terms.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <h5>Where can I find support and community discussion?</h5>
+                            <h5>Where can I find support and discussions?</h5>
                             <p class="text-muted">
                                 <a href="https://github.com/appifyhub/monolith/discussions" target="_blank">
                                     GitHub discussions
                                 </a> are the go-to place for support, discussions,
-                                or contributing to the AppifyHub ecosystem.
+                                or contributing to the AppifyHub ecosystem – or the respective project's GitHub pages.
                             </p>
                         </div>
                     </div>
@@ -301,12 +343,12 @@
 
             <div class="row mt-4">
                 <div class="col-md-6 mx-auto text-center">
-                    <h5 class="mb-4">Ready to build apps?</h5>
+                    <h5 class="mb-4">Ready to explore further?</h5>
 
-                    <a href="https://github.com/appifyhub/monolith/tree/main/docker" target="_blank"
+                    <a href="https://github.com/appifyhub" target="_blank"
                         class="btn btn-primary d-inline-flex flex-row align-items-center">
-                        GET STARTED
-                        <em class="ml-2" data-feather="arrow-right"></em>
+                        TAKE ME THERE
+                        <i class="ml-2" data-lucide="square-arrow-out-up-right"></i>
                     </a>
                 </div>
             </div>
@@ -327,9 +369,9 @@
                 <div class="col-md-10">
                     <h5>About the Project</h5>
                     <p class="text-muted smaller-less">
-                        AppifyHub was created because making apps should be about the cool ideas.
-                        This way, app making is for everyone — no backend degree required! And the project is
-                        open-source because when everyone chips in, we make something great even better.
+                        AppifyHub was created to provide developers with free, high-quality tools that solve real
+                        problems. Every tool in this ecosystem is open-source, documented, and ready to use in production.
+                        We believe great software should be accessible to everyone – let's build it together.
                     </p>
                 </div>
             </div>
@@ -349,7 +391,7 @@
     <!-- Load scripts, in order -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/scripts.js"></script>
     <script type="module" src="js/cookieconsent-config.js" defer></script>

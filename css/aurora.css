@@ -18,7 +18,7 @@
   position: absolute;
   filter: blur(6rem);
   -webkit-filter: blur(6rem);
-  opacity: 0.1;
+  opacity: 0.3;
   width: 40rem;
   height: 40rem;
   left: -4rem;
@@ -34,7 +34,7 @@
   position: absolute;
   filter: blur(6rem);
   -webkit-filter: blur(6rem);
-  opacity: 0.2;
+  opacity: 0.25;
   width: 50rem;
   height: 30rem;
   background-color: var(--aurora-color-2);
@@ -55,7 +55,7 @@
   position: absolute;
   filter: blur(6rem);
   -webkit-filter: blur(6rem);
-  opacity: 0.2;
+  opacity: 0.25;
   border-radius: 100%;
   width: 50rem;
   height: 50rem;
@@ -76,7 +76,7 @@
   position: absolute;
   filter: blur(7rem);
   -webkit-filter: blur(7rem);
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 100%;
   width: 50rem;
   height: 50rem;
