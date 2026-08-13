@@ -61,7 +61,7 @@ $(function () {
     });
 
     // Initialize slick carousel
-    let slickSlider = $('.slick-about');
+    const slickSlider = $('.slick-about');
     if (slickSlider.slick) {
         slickSlider.slick({
             slidesToShow: 1,
