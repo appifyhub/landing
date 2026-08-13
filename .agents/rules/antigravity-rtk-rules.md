@@ -10,11 +10,10 @@ Examples:
 
 ```bash
 rtk git status
-rtk cargo test
-rtk ls src/
-rtk grep "pattern" src/
-rtk find "*.rs" .
-rtk docker ps
+rtk python3 -m http.server 8000
+rtk curl -I https://www.appifyhub.com
+rtk tree -a -L 3
+rtk du -sh img/
 rtk gh pr list
 ```
 

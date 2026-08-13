@@ -1,9 +1,16 @@
 ---
-trigger: always_on
+trigger: glob
+globs: *.html,*.css,*.js
 ---
 
 ### Code style
 
-#### JavaScript/TypeScript
+#### HTML, CSS, and JavaScript
 
-In JavaScript and TypeScript, use types as much as possible: strict mode will be turned on! If in doubt, follow Java standard formatting. Finally, we also always want trailing commas in multi-line code blocks.
+Use clear, idiomatic vanilla HTML, CSS, and JavaScript. Edit `index.html`, `privacy.html`, `terms.html`, `css/`, and `js/` directly. jQuery and Bootstrap are loaded by CDN; do not introduce a frontend framework, bundler, Sass pipeline, or generated output directory.
+
+#### Comments
+
+- For new code, avoid comments unless the logic is genuinely complex or the block is long
+- When editing existing code, prefer updating comments over deleting them
+- Comments should start with a lowercase letter, except in documentation or where grammar requires it
