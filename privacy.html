@@ -34,26 +34,21 @@
     <link rel="stylesheet" href="css/policy.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
 
-    <!-- Background swap -->
-    <style type="text/css">
-        body {
-            background-image: url('img/privacy.jpg') !important;
-        }
-    </style>
 </head>
 
-<body>
-    <div class="container py-7 px-4 auroras">
+<body class="privacy-page">
+    <main class="container py-7 px-4 auroras policy-document">
         <div class="row mb-4 ml-0">
             <a href="index.html" class="heading-black">
-                <em data-feather="arrow-left" width="20" height="20" style="margin-bottom: -0.3rem;"></em>
-                <img src="img/logo-text-white-small.png" class="mr-2" alt="AppifyHub Logo" height="30" />
+                <i class="policy-back-icon" data-lucide="arrow-left" width="20" height="20"
+                    aria-hidden="true"></i>
+                <img src="img/logo-text-white-small.png" class="mr-2" alt="AppifyHub" height="30" />
             </a>
         </div>
 
         <h1>Privacy Policy</h1>
-        <h6 class="text-muted">Last updated: Jul 23, 2026</h6>
-        <h6 class="text-muted">Effective date: Jul 30, 2026</h6>
+        <p class="text-muted policy-date">Last updated: Jul 23, 2026</p>
+        <p class="text-muted policy-date">Effective date: Jul 30, 2026</p>
         <p>
             This privacy notice for Open Digital Services of Appify Hub (known also as Appify Hub)
             ("<b>Appify Hub</b>", "<b>AppifyHub</b>", "<b>we</b>", "<b>us</b>", or "<b>our</b>"),
@@ -88,7 +83,7 @@
             visitors. Other applications that are not available on our main website are not allowed to link to
             this privacy policy.
         </p>
-        <h4>Questions or concerns?</h4>
+        <h2 class="policy-summary-heading">Questions or concerns?</h2>
         <p>
             Reading this privacy notice will help you understand your privacy
             rights and choices. If you do not agree with our policies and practices, you are not allowed to use our
@@ -101,12 +96,12 @@
             about any of these topics by using our table of contents and looking below to find the section you
             are looking for.
         </p>
-        <h4>What personal information do we process?</h4>
+        <h3 class="policy-summary-heading">What personal information do we process?</h3>
         <p>
             When you visit, use, or navigate our Services, we may process personal information depending on how you
             interact with Appify Hub and the Services, the choices you make, and the products and features you use.
         </p>
-        <h4>Do we process any sensitive personal information?</h4>
+        <h3 class="policy-summary-heading">Do we process any sensitive personal information?</h3>
         <p>
             In our efforts to provide exceptional services through our app, there may be instances where the app, when
             integrated with Appify Hub, transmits sensitive personal information to us. We want to assure our users that
@@ -127,25 +122,27 @@
             100% secure. While we strive to use commercially acceptable means to protect your personal information, we
             cannot guarantee its absolute security.
         </p>
-        <h4>Do you receive any information from third parties?</h4>
+        <h3 class="policy-summary-heading">Do you receive any information from third parties?</h3>
         <p>
             Apps and services integrated with AppifyHub may transmit data to us, but we do not receive any information
             from third parties who are unaffiliated with AppifyHub. For more information on how the integrators are
             using your data, please refer to their privacy policies.
         </p>
-        <h4>How do you process my information?</h4>
+        <h3 class="policy-summary-heading">How do you process my information?</h3>
         <p>
             We process your information to provide, improve, and administer our Services, communicate with you, for
             security and fraud prevention, and to comply with law. We may also process your information for other
             purposes with your consent, for example to allow you to communicate with other users of the Services. We
             process your information only when we have a valid reason to do so.
         </p>
-        <h4>In what situations and with which parties do we share personal information?</h4>
+        <h3 class="policy-summary-heading">
+            In what situations and with which parties do we share personal information?
+        </h3>
         <p>
             We may share information in specific situations and with a closed group of third parties. This is explained
             in more detail in the rest of this notice.
         </p>
-        <h4>How do we keep your information safe?</h4>
+        <h3 class="policy-summary-heading">How do we keep your information safe?</h3>
         <p>
             Most of our source code is open-source for a reason. We implement organizational and technical
             processes to protect your personal information. All services are hosted in the European Union with
@@ -163,17 +160,17 @@
             unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or
             modify your information.
         </p>
-        <h4>What are your rights?</h4>
+        <h3 class="policy-summary-heading">What are your rights?</h3>
         <p>
             Depending on where you are located geographically, the applicable privacy law may mean you have certain
             rights regarding your personal information. This is explained in more detail in the rest of this notice.
         </p>
-        <h4>How do I exercise my rights?</h4>
+        <h3 class="policy-summary-heading">How do I exercise my rights?</h3>
         <p>
             The easiest way to exercise your rights is by contacting us at the email address given in the introduction.
             We will consider and act upon any request in accordance with applicable data protection laws.
         </p>
-        <h5 class="mt-5">Table of Contents</h5>
+        <h2 class="policy-toc-title mt-5">Table of Contents</h2>
         <ol class="smaller-less">
             <li>
                 What Information do we Collect?
@@ -1264,12 +1261,10 @@
             Preradoviceva 34/A<br />
             21000 Petrovaradin, Serbia
         </p>
-    </div>
+    </main>
 
-    <!-- Load scripts, in order -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+    <!-- Load scripts -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="js/scripts.js"></script>
     <script type="module" src="js/cookieconsent-config.js" defer></script>
 

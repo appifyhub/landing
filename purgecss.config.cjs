@@ -7,7 +7,6 @@ module.exports = {
       /^cm__/,
       /^pm__/,
       /^slick-/,
-      /^fa-/,
       /^navbar-/,
       /^dropdown-/,
       /^badge-/,
@@ -18,7 +17,9 @@ module.exports = {
       /^opened$/,
       /^scrolling$/,
       /^up$/,
+      /^mobile-menu-open$/,
     ],
     deep: [/^cc-/, /^slick-/, /^navbar/, /^dropdown/],
+    greedy: [/focus-visible/],
   },
 };

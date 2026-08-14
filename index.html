@@ -29,7 +29,6 @@
         href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" />
 
     <!-- Vendor styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
@@ -45,11 +44,11 @@
 
 <body>
     <!-- Navigation -->
-    <section class="smart-scroll">
+    <header class="smart-scroll">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <a class="heading-black" href="index.html">
-                    <img src="img/logo-text-white-small.png" height="50" alt="AppifyHub Logo" />
+                    <img src="img/logo-text-white-small.png" height="50" alt="AppifyHub" />
                 </a>
                 <button type="button" class="navbar-toggler navbar-toggler-right border-0" data-toggle="collapse"
                     data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
@@ -59,77 +58,79 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button"
+                            <button class="nav-link dropdown-toggle" type="button" id="appsDropdown"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Apps <span class="badge badge-new">NEW</span>
-                            </a>
+                            </button>
                             <div class="dropdown-menu" aria-labelledby="appsDropdown">
-                                <a class="dropdown-item" href="https://agent.appifyhub.com" target="_blank">The
+                                <a class="dropdown-item" href="https://agent.appifyhub.com" target="_blank" rel="noopener noreferrer">The
                                 Agent <span class="badge badge-new">NEW</span>
                                 </a>
                                 <a class="dropdown-item" href="https://github.com/appifyhub/timecrypt"
-                                    target="_blank">Timecrypt</a>
+                                    target="_blank" rel="noopener noreferrer">Timecrypt</a>
                                 <a class="dropdown-item"
                                     href="https://play.google.com/store/apps/details?id=com.vaptim.wallpapers"
-                                    target="_blank">Material Wallpapers: Infinite</a>
+                                    target="_blank" rel="noopener noreferrer">Material Wallpapers: Infinite</a>
                                 <a class="dropdown-item"
                                     href="https://play.google.com/store/apps/details?id=me.angrybyte.contactsgenerator"
-                                    target="_blank">Lorem Contacts</a>
+                                    target="_blank" rel="noopener noreferrer">Lorem Contacts</a>
                                 <a class="dropdown-item" href="https://picword-vapteam.en.download.it"
-                                    target="_blank">Picword: Photo-lock your PC</a>
+                                    target="_blank" rel="noopener noreferrer">Picword: Photo-lock your PC</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="devToolsDropdown" role="button"
+                            <button class="nav-link dropdown-toggle" type="button" id="devToolsDropdown"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Tools
-                            </a>
+                            </button>
                             <div class="dropdown-menu" aria-labelledby="devToolsDropdown">
                                 <a class="dropdown-item" href="https://github.com/appifyhub/monolith"
-                                    target="_blank">Project Bootstrap API</a>
+                                    target="_blank" rel="noopener noreferrer">Project Bootstrap API</a>
                                 <a class="dropdown-item" href="https://github.com/appifyhub/code-stats"
-                                    target="_blank">Code Stats</a>
+                                    target="_blank" rel="noopener noreferrer">Code Stats</a>
                                 <a class="dropdown-item" href="https://github.com/appifyhub/contacts-generator-android"
-                                    target="_blank">Contacts Generator</a>
+                                    target="_blank" rel="noopener noreferrer">Contacts Generator</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="androidDropdown" role="button"
+                            <button class="nav-link dropdown-toggle" type="button" id="androidDropdown"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Mobile
-                            </a>
+                            </button>
                             <div class="dropdown-menu" aria-labelledby="androidDropdown">
                                 <a class="dropdown-item" href="https://github.com/appifyhub/circular-slider-android"
-                                    target="_blank">Circular Slider</a>
+                                    target="_blank" rel="noopener noreferrer">Circular Slider</a>
                                 <a class="dropdown-item" href="https://github.com/appifyhub/actual-number-picker"
-                                    target="_blank">Actual Number Picker</a>
+                                    target="_blank" rel="noopener noreferrer">Actual Number Picker</a>
                                 <a class="dropdown-item" href="https://github.com/appifyhub/goose"
-                                    target="_blank">Goose: Link Previews</a>
+                                    target="_blank" rel="noopener noreferrer">Goose: Link Previews</a>
                                 <a class="dropdown-item" href="https://github.com/appifyhub/silly-android"
-                                    target="_blank">Silly Android</a>
+                                    target="_blank" rel="noopener noreferrer">Silly Android</a>
                                 <a class="dropdown-item" href="https://github.com/appifyhub/blinking-image-view"
-                                    target="_blank">Blinking Image View</a>
+                                    target="_blank" rel="noopener noreferrer">Blinking Image View</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button"
+                            <button class="nav-link dropdown-toggle" type="button" id="communityDropdown"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Community
-                            </a>
+                            </button>
                             <div class="dropdown-menu" aria-labelledby="communityDropdown">
-                                <a class="dropdown-item" href="https://github.com/appifyhub" target="_blank">All
+                                <a class="dropdown-item" href="https://github.com/appifyhub" target="_blank" rel="noopener noreferrer">All
                                     Sources</a>
                                 <a class="dropdown-item" href="https://api.cloud.appifyhub.com/docs/index.html"
-                                    target="_blank">Bootstrap API Docs</a>
+                                    target="_blank" rel="noopener noreferrer">Bootstrap API Docs</a>
                                 <a class="dropdown-item" href="https://github.com/appifyhub/monolith/blob/main/sdk"
-                                    target="_blank">Bootstrap SDK</a>
+                                    target="_blank" rel="noopener noreferrer">Bootstrap SDK</a>
                             </div>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-    </section>
+    </header>
+
+    <main>
 
     <!-- Hero -->
     <section class="py-7 py-md-0 auroras section-angle bottom-right" id="home">
@@ -147,11 +148,11 @@
                         Free, open-source apps and tools built by developers, for developers.
                         Download, use, contribute, and help shape the future of software craftsmanship.
                     </p>
-                    <button href="#features"
+                    <a href="#features"
                         class="btn btn-primary d-inline-flex flex-row align-items-center page-scroll">
                         SHOW ME MORE
-                        <i class="ml-2" data-lucide="chevrons-down"></i>
-                    </button>
+                        <i class="ml-2" data-lucide="chevrons-down" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -176,10 +177,10 @@
                         <div class="col-md-6 box">
                             <div class="icon-box box-blue">
                                 <div class="icon-box-inner">
-                                    <i data-lucide="app-window-mac" width="35" height="35"></i>
+                                    <i data-lucide="app-window-mac" width="35" height="35" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <h5>Apps & Productivity</h5>
+                            <h3 class="h5">Apps & Productivity</h3>
                             <p class="text-muted">
                                 Ready-to-use applications that boost productivity and solve problems in fun ways.
                                 AI agents, time management tools, encrypted messaging, and more – all open-source.
@@ -188,10 +189,10 @@
                         <div class="col-md-6 box">
                             <div class="icon-box box-teal">
                                 <div class="icon-box-inner">
-                                    <i data-lucide="tablet-smartphone" width="35" height="35"></i>
+                                    <i data-lucide="tablet-smartphone" width="35" height="35" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <h5>Mobile Libraries</h5>
+                            <h3 class="h5">Mobile Libraries</h3>
                             <p class="text-muted">
                                 Custom UI components, lifecycle managers, and utilities for mobile development.
                                 Save time with production-tested libraries that improve your mobile apps.
@@ -200,10 +201,10 @@
                         <div class="col-md-6 box">
                             <div class="icon-box box-yellow">
                                 <div class="icon-box-inner">
-                                    <i data-lucide="code-xml" width="35" height="35"></i>
+                                    <i data-lucide="code-xml" width="35" height="35" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <h5>Developer Tools</h5>
+                            <h3 class="h5">Developer Tools</h3>
                             <p class="text-muted">
                                 Cloud services, App Bootstrapping APIs, Developer Utilities – check out the tools
                                 built to accelerate your project launch and help you build your next workflow.
@@ -212,10 +213,10 @@
                         <div class="col-md-6 box">
                             <div class="icon-box box-red">
                                 <div class="icon-box-inner">
-                                    <i data-lucide="heart-handshake" width="35" height="35"></i>
+                                    <i data-lucide="heart-handshake" width="35" height="35" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <h5>Community-Driven</h5>
+                            <h3 class="h5">Community-Driven</h3>
                             <p class="text-muted">
                                 Built by developers, for developers. Contribute code, report issues,
                                 or suggest new features. Your input shapes the future of these tools.
@@ -233,7 +234,7 @@
             <div class="row px-3 py-2">
                 <div class="col-md-10 mx-auto text-center">
                     <h2 class="heading-black">Bootstrap API: Getting Started</h2>
-                    <p class="text-muted lead" style="margin-top: 3rem;">
+                    <p class="text-muted lead demo-introduction">
                         The Bootstrap API is free to use on an invite-only basis (for now). It allows you to
                         quickly prototype your next app idea without the hassle of setting up a backend.
                         Download the source to host it yourself, or integrate with AppifyHub's instances!
@@ -253,12 +254,14 @@
                 </div>
                 <div class="col-md-8 mx-auto text-center">
                     <div class="slick-about">
-                        <img src="img/demo-health-check.png" class="img-fluid rounded d-block mx-auto" alt="Sample 1" />
+                        <img src="img/demo-health-check.png" class="img-fluid rounded d-block mx-auto"
+                            alt="Bootstrap API health check response" />
                         <img src="img/demo-creating-project.png" class="img-fluid rounded d-block mx-auto"
-                            alt="Sample 2" />
+                            alt="Creating a project with the Bootstrap API" />
                         <img src="img/demo-sending-message.png" class="img-fluid rounded d-block mx-auto"
-                            alt="Sample 3" />
-                        <img src="img/demo-user-login.png" class="img-fluid rounded d-block mx-auto" alt="Sample 4" />
+                            alt="Sending a message with the Bootstrap API" />
+                        <img src="img/demo-user-login.png" class="img-fluid rounded d-block mx-auto"
+                            alt="User login with the Bootstrap API" />
                     </div>
                 </div>
             </div>
@@ -269,11 +272,11 @@
                     <p class="text-muted">
                         With no lengthy tutorials or complex setup processes, it's clear that these Project Bootstrapping
                         tools are designed to be intuitive and well-documented. Check out the
-                        <a href="https://api.cloud.appifyhub.com/docs/index.html" target="_blank">API documentation</a>,
+                        <a href="https://api.cloud.appifyhub.com/docs/index.html" target="_blank" rel="noopener noreferrer">API documentation</a>,
                         or explore the
-                        <a href="https://github.com/appifyhub/monolith" target="_blank">source code on GitHub</a>.
+                        <a href="https://github.com/appifyhub/monolith" target="_blank" rel="noopener noreferrer">source code on GitHub</a>.
                         For self-hosting, there's a simple Docker image available, making the APIs
-                        <a href="https://github.com/appifyhub/monolith/tree/main/docker" target="_blank">easy to deploy</a>,
+                        <a href="https://github.com/appifyhub/monolith/tree/main/docker" target="_blank" rel="noopener noreferrer">easy to deploy</a>,
                         build, and contribute to.
                     </p>
                 </div>
@@ -295,46 +298,46 @@
                 <div class="col-md-10 mx-auto">
                     <div class="row">
                         <div class="col-md-6 mb-4">
-                            <h5>Is the code really free?</h5>
+                            <h3 class="h5">Is the code really free?</h3>
                             <p class="text-muted">
                                 Absolutely. AppifyHub is open-source under the MIT and Apache Licenses, which permits commercial use.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <h5>How can I request a new feature?</h5>
+                            <h3 class="h5">How can I request a new feature?</h3>
                             <p class="text-muted">
                                 For feature requests, please
                                 <a href="https://github.com/appifyhub/monolith/issues/new?template=feature_request.md"
-                                    target="_blank">
+                                    target="_blank" rel="noopener noreferrer">
                                     open an issue on GitHub
                                 </a> here, or at the respective repository of the tool you're using.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <h5>How can I support these projects?</h5>
+                            <h3 class="h5">How can I support these projects?</h3>
                             <p class="text-muted">
                                 Download and use the apps, star the repositories and sponsor developers on GitHub,
                                 contribute code, report bugs, or spread the word to other developers.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <h5>Are these tools production-ready?</h5>
+                            <h3 class="h5">Are these tools production-ready?</h3>
                             <p class="text-muted">
                                 Yes! These tools are tested and purpose-built for use in production.
                                 Each project includes some documentation, a README, and some usage instructions.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <h5>Can I modify and redistribute these tools?</h5>
+                            <h3 class="h5">Can I modify and redistribute these tools?</h3>
                             <p class="text-muted">
                                 Absolutely! Everything is open-source under relatively permissive licenses.
                                 Fork, modify, and distribute as you see fit, following each project's license terms.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <h5>Where can I find support and discussions?</h5>
+                            <h3 class="h5">Where can I find support and discussions?</h3>
                             <p class="text-muted">
-                                <a href="https://github.com/appifyhub/monolith/discussions" target="_blank">
+                                <a href="https://github.com/appifyhub/monolith/discussions" target="_blank" rel="noopener noreferrer">
                                     GitHub discussions
                                 </a> are the go-to place for support, discussions,
                                 or contributing to the AppifyHub ecosystem – or the respective project's GitHub pages.
@@ -346,31 +349,32 @@
 
             <div class="row mt-4">
                 <div class="col-md-6 mx-auto text-center">
-                    <h5 class="mb-4">Ready to explore further?</h5>
+                    <h3 class="h5 mb-4">Ready to explore further?</h3>
 
-                    <a href="https://github.com/appifyhub" target="_blank"
+                    <a href="https://github.com/appifyhub" target="_blank" rel="noopener noreferrer"
                         class="btn btn-primary d-inline-flex flex-row align-items-center">
                         TAKE ME THERE
-                        <i class="ml-2" data-lucide="square-arrow-out-up-right"></i>
+                        <i class="ml-2" data-lucide="square-arrow-out-up-right" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="pt-6 pb-4 bg-dark section-angle top-right">
         <div class="container">
             <div class="row">
                 <div class="col-md-2 mr-auto ml-4 mb-4">
-                    <h5>Legal</h5>
+                    <h2 class="h5">Legal</h2>
                     <ul class="list-unstyled smaller-less">
-                        <li><a href="privacy.html" target="_blank">Privacy</a></li>
-                        <li><a href="terms.html" target="_blank">Terms</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
                     </ul>
                 </div>
                 <div class="col-md-10">
-                    <h5>About the Project</h5>
+                    <h2 class="h5">About the Project</h2>
                     <p class="text-muted smaller-less">
                         AppifyHub was created to provide developers with free, high-quality tools that solve real
                         problems. Every tool in this ecosystem is open-source, documented, and ready to use in production.
@@ -387,13 +391,13 @@
     </footer>
 
     <!-- Scroll to top -->
-    <div class="scroll-top">
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
-    </div>
+    <button class="scroll-top" type="button" aria-label="Scroll to top">
+        <i data-lucide="chevron-up" aria-hidden="true"></i>
+    </button>
 
     <!-- Load scripts, in order -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/scripts.js"></script>

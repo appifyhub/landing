@@ -34,25 +34,20 @@
     <link rel="stylesheet" href="css/policy.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
 
-    <!-- Background swap -->
-    <style type="text/css">
-        body {
-            background-image: url('img/terms.jpg') !important;
-        }
-    </style>
 </head>
 
-<body>
-    <div class="container py-7 px-4 auroras">
+<body class="terms-page">
+    <main class="container py-7 px-4 auroras policy-document">
         <div class="row mb-4 ml-0">
             <a href="index.html" class="heading-black">
-                <em data-feather="arrow-left" width="20" height="20" style="margin-bottom: -0.3rem;"></em>
-                <img src="img/logo-text-white-small.png" class="mr-2" alt="AppifyHub Logo" height="30" />
+                <i class="policy-back-icon" data-lucide="arrow-left" width="20" height="20"
+                    aria-hidden="true"></i>
+                <img src="img/logo-text-white-small.png" class="mr-2" alt="AppifyHub" height="30" />
             </a>
         </div>
         <h1>Terms of Service</h1>
-        <h6 class="text-muted">Last updated: Jul 23, 2026</h6>
-        <h6 class="text-muted">Effective date: Jul 30, 2026</h6>
+        <p class="text-muted policy-date">Last updated: Jul 23, 2026</p>
+        <p class="text-muted policy-date">Effective date: Jul 30, 2026</p>
         <h2>1. Agreement to Terms</h2>
         <p>
             These Terms of Use constitute an agreement made between you, whether personally or on behalf of an entity
@@ -96,7 +91,7 @@
             interactions would be subjected to such laws, you may not use this Site. You may not use the Site in a way
             that would violate the Gramm-Leach-Bliley Act (GLBA).
         </p>
-        <h5>Table of Contents</h5>
+        <h2 class="policy-toc-title">Table of Contents</h2>
         <ol class="smaller">
             <li>
                 Agreement to Terms
@@ -1034,12 +1029,10 @@
             Preradoviceva 34/A<br />
             21000 Petrovaradin, Serbia
         </p>
-    </div>
+    </main>
 
-    <!-- Load scripts, in order -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+    <!-- Load scripts -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="js/scripts.js"></script>
     <script type="module" src="js/cookieconsent-config.js" defer></script>
 

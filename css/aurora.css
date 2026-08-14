@@ -128,3 +128,12 @@
     -o-transform: rotate(-2turn) translate(200px) rotate(2turn);
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-1,
+  .aurora-2,
+  .aurora-3,
+  .aurora-4 {
+    animation: none;
+  }
+}
