@@ -17,7 +17,7 @@
     "lint:html": "htmlhint \"*.html\"",
     "lint:css": "stylelint \"css/**/*.css\"",
     "lint:js": "eslint \"js/**/*.js\"",
-    "report:unused-css": "purgecss --config purgecss.config.cjs --rejected",
+    "report:unused-css": "node scripts/report-unused-css.mjs",
     "bump": "bun scripts/bump-version.ts",
     "create_pr": "bun scripts/create-pr.ts"
   },
