@@ -6,10 +6,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description"
-        content="AppifyHub: Enabling developers to bring app ideas to life without the backend hassle. Explore essential services for app prototyping like authentication, authorization, and user communication – all open-source." />
-    <meta name="keywords"
-        content="AppifyHub, app prototyping, developer tools, open-source, authentication, user management, sms, email, push, app development, no backend" />
-    <title>AppifyHub · Enabling App Developers</title>
+        content="AppifyHub is a home for open-source apps and tools. Browse projects to use, learn from, or build on." />
+    <title>AppifyHub · Open Apps and Tools</title>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
@@ -29,8 +27,6 @@
         href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" />
 
     <!-- Vendor styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
 
     <!-- Page styles -->
@@ -43,86 +39,24 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header class="smart-scroll">
+    <header class="site-header smart-scroll">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="heading-black" href="index.html">
+            <nav class="navbar navbar-expand-md navbar-dark" aria-label="Primary navigation">
+                <a class="brand-link" href="#home" aria-label="AppifyHub home">
                     <img src="img/logo-text-white-small.png" height="50" alt="AppifyHub" />
                 </a>
-                <button type="button" class="navbar-toggler navbar-toggler-right border-0" data-toggle="collapse"
-                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i data-lucide="menu"></i>
+                <button class="navbar-toggler" type="button" aria-controls="navbarCollapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16" /><path d="M4 6h16" /><path d="M4 18h16" /></svg>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <button class="nav-link dropdown-toggle" type="button" id="appsDropdown"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Apps <span class="badge badge-new">NEW</span>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="appsDropdown">
-                                <a class="dropdown-item" href="https://agent.appifyhub.com" target="_blank" rel="noopener noreferrer">The
-                                Agent <span class="badge badge-new">NEW</span>
-                                </a>
-                                <a class="dropdown-item" href="https://github.com/appifyhub/timecrypt"
-                                    target="_blank" rel="noopener noreferrer">Timecrypt</a>
-                                <a class="dropdown-item"
-                                    href="https://play.google.com/store/apps/details?id=com.vaptim.wallpapers"
-                                    target="_blank" rel="noopener noreferrer">Material Wallpapers: Infinite</a>
-                                <a class="dropdown-item"
-                                    href="https://play.google.com/store/apps/details?id=me.angrybyte.contactsgenerator"
-                                    target="_blank" rel="noopener noreferrer">Lorem Contacts</a>
-                                <a class="dropdown-item" href="https://picword-vapteam.en.download.it"
-                                    target="_blank" rel="noopener noreferrer">Picword: Photo-lock your PC</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <button class="nav-link dropdown-toggle" type="button" id="devToolsDropdown"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Tools
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="devToolsDropdown">
-                                <a class="dropdown-item" href="https://github.com/appifyhub/monolith"
-                                    target="_blank" rel="noopener noreferrer">Project Bootstrap API</a>
-                                <a class="dropdown-item" href="https://github.com/appifyhub/code-stats"
-                                    target="_blank" rel="noopener noreferrer">Code Stats</a>
-                                <a class="dropdown-item" href="https://github.com/appifyhub/contacts-generator-android"
-                                    target="_blank" rel="noopener noreferrer">Contacts Generator</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <button class="nav-link dropdown-toggle" type="button" id="androidDropdown"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Mobile
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="androidDropdown">
-                                <a class="dropdown-item" href="https://github.com/appifyhub/circular-slider-android"
-                                    target="_blank" rel="noopener noreferrer">Circular Slider</a>
-                                <a class="dropdown-item" href="https://github.com/appifyhub/actual-number-picker"
-                                    target="_blank" rel="noopener noreferrer">Actual Number Picker</a>
-                                <a class="dropdown-item" href="https://github.com/appifyhub/goose"
-                                    target="_blank" rel="noopener noreferrer">Goose: Link Previews</a>
-                                <a class="dropdown-item" href="https://github.com/appifyhub/silly-android"
-                                    target="_blank" rel="noopener noreferrer">Silly Android</a>
-                                <a class="dropdown-item" href="https://github.com/appifyhub/blinking-image-view"
-                                    target="_blank" rel="noopener noreferrer">Blinking Image View</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <button class="nav-link dropdown-toggle" type="button" id="communityDropdown"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Community
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="communityDropdown">
-                                <a class="dropdown-item" href="https://github.com/appifyhub" target="_blank" rel="noopener noreferrer">All
-                                    Sources</a>
-                                <a class="dropdown-item" href="https://api.cloud.appifyhub.com/docs/index.html"
-                                    target="_blank" rel="noopener noreferrer">Bootstrap API Docs</a>
-                                <a class="dropdown-item" href="https://github.com/appifyhub/monolith/blob/main/sdk"
-                                    target="_blank" rel="noopener noreferrer">Bootstrap SDK</a>
-                            </div>
+                        <li class="nav-item"><a class="nav-link" href="#active">Active</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">All</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link cta" href="https://github.com/appifyhub" target="_blank"
+                                rel="noopener noreferrer">GitHub <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </li>
                     </ul>
                 </div>
@@ -131,275 +65,291 @@
     </header>
 
     <main>
+        <section class="hero auroras section-angle bottom-right" id="home">
+            <div class="container hero-inner">
+                <div class="aurora-1"></div>
+                <div class="aurora-2"></div>
+                <div class="aurora-3"></div>
+                <div class="aurora-4"></div>
+                <div class="aurora-5"></div>
 
-    <!-- Hero -->
-    <section class="py-7 py-md-0 auroras section-angle bottom-right" id="home">
-        <div class="container">
-            <div class="aurora-1"></div>
-            <div class="aurora-2"></div>
-            <div class="aurora-3"></div>
-            <div class="aurora-4"></div>
-            <div class="aurora-5"></div>
-
-            <div class="row vh-md-100">
-                <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
-                    <h1 class="heading-black">Open-Source Tools for Developers & Enthusiasts</h1>
-                    <p class="lead py-3">
-                        Free, open-source apps and tools built by developers, for developers.
-                        Download, use, contribute, and help shape the future of software craftsmanship.
+                <div class="hero-copy">
+                    <h1>Home of Open Apps and Tools</h1>
+                    <p class="lead">
+                        AppifyHub collects apps, developer tools, libraries, and the infrastructure behind them.
+                        Browse something to use, learn from, or build on – each entry has the basics and the most useful
+                        links.
                     </p>
-                    <a href="#features"
-                        class="btn btn-primary d-inline-flex flex-row align-items-center page-scroll">
-                        SHOW ME MORE
-                        <i class="ml-2" data-lucide="chevrons-down" aria-hidden="true"></i>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#active">
+                            See what is active
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
+                        </a>
+                        <a class="text-action" href="#projects">
+                            Browse all projects
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="active-work section-angle bottom-left" id="active">
+            <div class="container">
+                <div class="section-intro">
+                    <p class="eyebrow">Active</p>
+                    <h2>In focus</h2>
+                    <p>A look at what is being built or improved right now.</p>
+                </div>
+
+                <article class="spotlight-project">
+                    <div class="spotlight-marker" aria-hidden="true">
+                        <img src="graphics/out/logo-agent-green-transparent.png" width="240" height="240" alt="" />
+                    </div>
+                    <div class="spotlight-copy">
+                        <div class="project-meta">
+                            <span class="project-type">Apps</span>
+                            <span class="status status-active">Active</span>
+                        </div>
+                        <h3>The Agent</h3>
+                        <p class="project-summary">
+                            A private AI assistant that connects conversations, tools, and personal use in one
+                            open-source app.
+                        </p>
+                        <p class="project-audience">Use it as-is, or shape it around your own usage patterns.</p>
+                        <div class="project-actions">
+                            <a class="btn btn-primary" href="https://agent.appifyhub.com" target="_blank"
+                                rel="noopener noreferrer">Check it out <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-types" aria-labelledby="types-title">
+            <div class="container">
+                <div class="section-intro section-intro-wide">
+                    <p class="eyebrow">Browse by type</p>
+                    <h2 id="types-title">Find something to use or build with</h2>
+                    <p>Apps to try, tools to work with, code and infrastructure to explore.</p>
+                </div>
+                <div class="type-list">
+                    <a class="type-item" href="#apps">
+                        <span><strong>Apps</strong><small>Things to install, try, and use.</small></span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
+                    </a>
+                    <a class="type-item" href="#developer-tools">
+                        <span><strong>Developer Tools</strong><small>Utilities and services for building software.</small></span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
+                    </a>
+                    <a class="type-item" href="#libraries">
+                        <span><strong>Libraries</strong><small>Code to reuse, adapt, or learn from.</small></span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
+                    </a>
+                    <a class="type-item" href="#infrastructure">
+                        <span><strong>Infrastructure</strong><small>Deployment foundations, guides, terraform, helm, and more.</small></span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Features -->
-    <section class="pt-6 pb-7 section-angle top-left bottom-right" id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 mx-auto text-center">
-                    <h2 class="heading-black">Explore the Open-Source Ecosystem</h2>
-                    <p class="text-muted lead">
-                        A collection of open-source tools and apps designed by developers who understand
-                        developers' needs. From productivity apps and online services, to various libraries
-                        – everything is free to use and contribute to.
-                    </p>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-10 mx-auto">
-                    <div class="row feature-boxes">
-                        <div class="col-md-6 box">
-                            <div class="icon-box box-blue">
-                                <div class="icon-box-inner">
-                                    <i data-lucide="app-window-mac" width="35" height="35" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <h3 class="h5">Apps & Productivity</h3>
-                            <p class="text-muted">
-                                Ready-to-use applications that boost productivity and solve problems in fun ways.
-                                AI agents, time management tools, encrypted messaging, and more – all open-source.
-                            </p>
-                        </div>
-                        <div class="col-md-6 box">
-                            <div class="icon-box box-teal">
-                                <div class="icon-box-inner">
-                                    <i data-lucide="tablet-smartphone" width="35" height="35" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <h3 class="h5">Mobile Libraries</h3>
-                            <p class="text-muted">
-                                Custom UI components, lifecycle managers, and utilities for mobile development.
-                                Save time with production-tested libraries that improve your mobile apps.
-                            </p>
-                        </div>
-                        <div class="col-md-6 box">
-                            <div class="icon-box box-yellow">
-                                <div class="icon-box-inner">
-                                    <i data-lucide="code-xml" width="35" height="35" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <h3 class="h5">Developer Tools</h3>
-                            <p class="text-muted">
-                                Cloud services, App Bootstrapping APIs, Developer Utilities – check out the tools
-                                built to accelerate your project launch and help you build your next workflow.
-                            </p>
-                        </div>
-                        <div class="col-md-6 box">
-                            <div class="icon-box box-red">
-                                <div class="icon-box-inner">
-                                    <i data-lucide="heart-handshake" width="35" height="35" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <h3 class="h5">Community-Driven</h3>
-                            <p class="text-muted">
-                                Built by developers, for developers. Contribute code, report issues,
-                                or suggest new features. Your input shapes the future of these tools.
-                            </p>
+        <section class="project-catalog section-angle top-right bottom-right" id="projects">
+            <div class="container">
+                <div class="catalog-heading">
+                    <p class="eyebrow">All projects</p>
+                    <div class="catalog-heading-row">
+                        <h2>Browse the collection</h2>
+                        <div class="status-key" aria-label="Lifecycle definitions">
+                            <span>
+                                <span class="status-key-label"><b class="status-dot status-dot-active"></b>Active</span>
+                                <small>being developed</small>
+                            </span>
+                            <span>
+                                <span class="status-key-label"><b class="status-dot status-dot-maintained"></b>Maintained</span>
+                                <small>kept useful</small>
+                            </span>
+                            <span>
+                                <span class="status-key-label"><b class="status-dot status-dot-complete"></b>Complete</span>
+                                <small>reached its endpoint</small>
+                            </span>
+                            <span>
+                                <span class="status-key-label"><b class="status-dot status-dot-archived"></b>Archived</span>
+                                <small>reference only</small>
+                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Carousel -->
-    <section class="pt-6 pb-7 bg-dark section-angle top-right bottom-right" id="demo">
-        <div class="container">
-            <div class="row px-3 py-2">
-                <div class="col-md-10 mx-auto text-center">
-                    <h2 class="heading-black">Bootstrap API: Getting Started</h2>
-                    <p class="text-muted lead demo-introduction">
-                        The Bootstrap API is free to use on an invite-only basis (for now). It allows you to
-                        quickly prototype your next app idea without the hassle of setting up a backend.
-                        Download the source to host it yourself, or integrate with AppifyHub's instances!
-                        Support developers by trying out these tools and sharing your feedback.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row px-3 py-4 mb-4">
-                <div class="col-md-10 mb-5 mx-auto text-center">
-                    <h3>Core features out of the box</h3>
-                    <p class="text-muted">
-                        With an emphasis on simplicity, but also on convention over configuration,
-                        these Bootstrap APIs are designed to be intuitive and straightforward,
-                        enabling a faster launch of your app.
-                    </p>
-                </div>
-                <div class="col-md-8 mx-auto text-center">
-                    <div class="slick-about">
-                        <img src="img/demo-health-check.png" class="img-fluid rounded d-block mx-auto"
-                            alt="Bootstrap API health check response" />
-                        <img src="img/demo-creating-project.png" class="img-fluid rounded d-block mx-auto"
-                            alt="Creating a project with the Bootstrap API" />
-                        <img src="img/demo-sending-message.png" class="img-fluid rounded d-block mx-auto"
-                            alt="Sending a message with the Bootstrap API" />
-                        <img src="img/demo-user-login.png" class="img-fluid rounded d-block mx-auto"
-                            alt="User login with the Bootstrap API" />
+                <section class="catalog-group" id="apps" aria-labelledby="apps-title">
+                    <header class="catalog-group-heading">
+                        <h3 id="apps-title">Apps</h3>
+                        <span>Software people can use</span>
+                    </header>
+                    <div class="project-list">
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>The Agent</h4><span class="status status-active">Active</span></div>
+                            <div class="project-detail"><p>A private AI assistant for connected conversations, tools, and personal workflows.</p><small>For people looking for an inspectable, adaptable assistant.</small></div>
+                            <a class="project-link" href="https://agent.appifyhub.com" target="_blank" rel="noopener noreferrer">Check it out <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Material Wallpapers: Infinite</h4><span class="status status-complete">Complete</span></div>
+                            <div class="project-detail"><p>An Android wallpaper app built around generated Material Design compositions.</p><small>For Android users who want an extensive wallpaper collection.</small></div>
+                            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.vaptim.wallpapers" target="_blank" rel="noopener noreferrer">Google Play <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Lorem Contacts</h4><span class="status status-complete">Complete</span></div>
+                            <div class="project-detail"><p>An Android utility for filling a device with realistic placeholder contacts.</p><small>For developers and testers who need contact data quickly.</small></div>
+                            <a class="project-link" href="https://github.com/appifyhub/contacts-generator-android" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Timecrypt</h4><span class="status status-complete">Complete</span></div>
+                            <div class="project-detail"><p>A time-limited, encrypted, self-destructing messaging service.</p><small>This project is succeeded by Bitwarden Send.</small></div>
+                            <a class="project-link" href="https://github.com/appifyhub/timecrypt" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Picword</h4><span class="status status-complete">Complete</span></div>
+                            <div class="project-detail"><p>A Windows utility that used a chosen photo as part of the device unlock flow.</p><small>This project is succeeded by Windows Hello.</small></div>
+                            <a class="project-link" href="https://picword-vapteam.en.download.it" target="_blank" rel="noopener noreferrer">Read more <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
                     </div>
-                </div>
-            </div>
+                </section>
 
-            <div class="row mt-4">
-                <div class="col-md-10 mx-auto text-center">
-                    <h3 class="pb-3">Spartan: for hard-core developers</h3>
-                    <p class="text-muted">
-                        With no lengthy tutorials or complex setup processes, it's clear that these Project Bootstrapping
-                        tools are designed to be intuitive and well-documented. Check out the
-                        <a href="https://api.cloud.appifyhub.com/docs/index.html" target="_blank" rel="noopener noreferrer">API documentation</a>,
-                        or explore the
-                        <a href="https://github.com/appifyhub/monolith" target="_blank" rel="noopener noreferrer">source code on GitHub</a>.
-                        For self-hosting, there's a simple Docker image available, making the APIs
-                        <a href="https://github.com/appifyhub/monolith/tree/main/docker" target="_blank" rel="noopener noreferrer">easy to deploy</a>,
-                        build, and contribute to.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="py-7 section-angle bottom-left" id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mx-auto text-center">
-                    <h2>Frequently asked questions</h2>
-                    <p class="text-muted lead">Answers to the most common questions.</p>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-md-10 mx-auto">
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <h3 class="h5">Is the code really free?</h3>
-                            <p class="text-muted">
-                                Absolutely. AppifyHub is open-source under the MIT and Apache Licenses, which permits commercial use.
-                            </p>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <h3 class="h5">How can I request a new feature?</h3>
-                            <p class="text-muted">
-                                For feature requests, please
-                                <a href="https://github.com/appifyhub/monolith/issues/new?template=feature_request.md"
-                                    target="_blank" rel="noopener noreferrer">
-                                    open an issue on GitHub
-                                </a> here, or at the respective repository of the tool you're using.
-                            </p>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <h3 class="h5">How can I support these projects?</h3>
-                            <p class="text-muted">
-                                Download and use the apps, star the repositories and sponsor developers on GitHub,
-                                contribute code, report bugs, or spread the word to other developers.
-                            </p>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <h3 class="h5">Are these tools production-ready?</h3>
-                            <p class="text-muted">
-                                Yes! These tools are tested and purpose-built for use in production.
-                                Each project includes some documentation, a README, and some usage instructions.
-                            </p>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <h3 class="h5">Can I modify and redistribute these tools?</h3>
-                            <p class="text-muted">
-                                Absolutely! Everything is open-source under relatively permissive licenses.
-                                Fork, modify, and distribute as you see fit, following each project's license terms.
-                            </p>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <h3 class="h5">Where can I find support and discussions?</h3>
-                            <p class="text-muted">
-                                <a href="https://github.com/appifyhub/monolith/discussions" target="_blank" rel="noopener noreferrer">
-                                    GitHub discussions
-                                </a> are the go-to place for support, discussions,
-                                or contributing to the AppifyHub ecosystem – or the respective project's GitHub pages.
-                            </p>
-                        </div>
+                <section class="catalog-group" id="developer-tools" aria-labelledby="developer-tools-title">
+                    <header class="catalog-group-heading">
+                        <h3 id="developer-tools-title">Developer Tools</h3>
+                        <span>Software for building and operating software</span>
+                    </header>
+                    <div class="project-list">
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Bootstrap API</h4><span class="status status-complete">Complete</span></div>
+                            <div class="project-detail"><p>A hosted and self-hostable API foundation for common app backend capabilities.</p><small>For developers who need its existing API or source; available, but not under active development.</small></div>
+                            <a class="project-link" href="https://github.com/appifyhub/monolith/tree/main/sdk" target="_blank" rel="noopener noreferrer">Check SDKs <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Code Stats</h4><span class="status status-archived">Archived</span></div>
+                            <div class="project-detail"><p>A utility for inspecting and reporting source-code statistics.</p><small>For developers browsing the implementation as a reference.</small></div>
+                            <a class="project-link" href="https://github.com/appifyhub/code-stats" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
                     </div>
-                </div>
+                </section>
+
+                <section class="catalog-group" id="libraries" aria-labelledby="libraries-title">
+                    <header class="catalog-group-heading">
+                        <h3 id="libraries-title">Libraries</h3>
+                        <span>Reusable building blocks for other projects</span>
+                    </header>
+                    <div class="project-list">
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Actual Number Picker</h4><span class="status status-archived">Archived</span></div>
+                            <div class="project-detail"><p>A customizable numeric picker component for Android interfaces.</p><small>For Android developers referencing a legacy UI component.</small></div>
+                            <a class="project-link" href="https://github.com/appifyhub/actual-number-picker" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Circular Slider</h4><span class="status status-archived">Archived</span></div>
+                            <div class="project-detail"><p>A circular slider control for Android applications.</p><small>For Android developers referencing a legacy interaction component.</small></div>
+                            <a class="project-link" href="https://github.com/appifyhub/circular-slider-android" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Silly Android</h4><span class="status status-archived">Archived</span></div>
+                            <div class="project-detail"><p>A collection of Android utilities and application helpers.</p><small>For Android developers exploring older implementation patterns.</small></div>
+                            <a class="project-link" href="https://github.com/appifyhub/silly-android" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Blinking Image View</h4><span class="status status-archived">Archived</span></div>
+                            <div class="project-detail"><p>An Android image-view component with configurable blinking behavior.</p><small>For Android developers referencing a focused legacy component.</small></div>
+                            <a class="project-link" href="https://github.com/appifyhub/blinking-image-view" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Goose: Link Previews</h4><span class="status status-archived">Archived</span></div>
+                            <div class="project-detail"><p>A maintained-at-the-time fork of the Goose article and metadata extractor.</p><small>For developers researching link-preview extraction code.</small></div>
+                            <a class="project-link" href="https://github.com/appifyhub/goose" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="catalog-group" id="infrastructure" aria-labelledby="infrastructure-title">
+                    <header class="catalog-group-heading">
+                        <h3 id="infrastructure-title">Infrastructure</h3>
+                        <span>Deployment and hosting foundations</span>
+                    </header>
+                    <div class="project-list">
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Terraform</h4><span class="status status-maintained">Maintained</span></div>
+                            <div class="project-detail"><p>Terraform foundations for provisioning the infrastructure behind AppifyHub services.</p><small>For operators adapting an open starting point to their own environment.</small></div>
+                            <a class="project-link" href="https://github.com/appifyhub/terraform" target="_blank" rel="noopener noreferrer">Inspect source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                        <article class="project-entry">
+                            <div class="project-identity"><h4>Helm</h4><span class="status status-maintained">Maintained</span></div>
+                            <div class="project-detail"><p>Helm charts used to package and deploy services in Kubernetes.</p><small>For operators using or adapting the published deployment charts.</small></div>
+                            <a class="project-link" href="https://charts.appifyhub.com" target="_blank" rel="noopener noreferrer">Browse charts <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                        </article>
+                    </div>
+                </section>
             </div>
+        </section>
 
-            <div class="row mt-4">
-                <div class="col-md-6 mx-auto text-center">
-                    <h3 class="h5 mb-4">Ready to explore further?</h3>
+        <section class="project-history" aria-labelledby="history-title">
+            <div class="container">
+                <div class="section-intro section-intro-wide">
+                    <p class="eyebrow">Along the way</p>
+                    <h2 id="history-title">A few project milestones</h2>
+                    <p>Most of the projects found users, solved a problem, or led to something better.</p>
+                </div>
+                <ol class="history-list">
+                    <li><strong>350K+</strong><span>Material Wallpapers installs on Google Play, driven largely by word of mouth.</span></li>
+                    <li><strong>5K+</strong><span>Lorem Contacts installs on Google Play.</span></li>
+                    <li><strong>Succeeded</strong><span>Timecrypt's functionality is now fully integrated into Bitwarden Send.</span></li>
+                    <li><strong>Succeeded</strong><span>Picword's main functionality was integrated into Windows 8.</span></li>
+                </ol>
+            </div>
+        </section>
 
-                    <a href="https://github.com/appifyhub" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-primary d-inline-flex flex-row align-items-center">
-                        TAKE ME THERE
-                        <i class="ml-2" data-lucide="square-arrow-out-up-right" aria-hidden="true"></i>
+        <section class="about section-angle top-left bottom-left" id="about">
+            <div class="container about-layout">
+                <div class="section-intro">
+                    <p class="eyebrow">About AppifyHub</p>
+                    <h2>What is AppifyHub?</h2>
+                </div>
+                <div class="about-copy">
+                    <p>
+                        AppifyHub is a collection of open-source apps and developer projects built over the years. It is
+                        a place to find something useful, look through the code, or pick up an idea for a project of
+                        your own.
+                    </p>
+                    <p>
+                        For source, issues, contribution notes, or support, follow the link on each project. GitHub has
+                        the code and the latest project-specific information.
+                    </p>
+                    <a class="text-action" href="https://github.com/appifyhub" target="_blank" rel="noopener noreferrer">
+                        Explore AppifyHub on GitHub
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="pt-6 pb-4 bg-dark section-angle top-right">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 mr-auto ml-4 mb-4">
-                    <h2 class="h5">Legal</h2>
-                    <ul class="list-unstyled smaller-less">
-                        <li><a href="privacy.html">Privacy</a></li>
-                        <li><a href="terms.html">Terms</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-10">
-                    <h2 class="h5">About the Project</h2>
-                    <p class="text-muted smaller-less">
-                        AppifyHub was created to provide developers with free, high-quality tools that solve real
-                        problems. Every tool in this ecosystem is open-source, documented, and ready to use in production.
-                        We believe great software should be accessible to everyone – let's build it together.
-                    </p>
-                </div>
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <div>
+                <img src="img/logo-text-white-small.png" height="38" alt="AppifyHub" />
+                <p>Open-source apps and the tools behind them.</p>
             </div>
-            <div class="row mt-2">
-                <div class="col-12 text-muted text-center smaller">
-                    2018 - Present © AppifyHub · All Rights Reserved
-                </div>
-            </div>
+            <nav aria-label="Footer navigation">
+                <a href="#projects">Projects</a>
+                <a href="https://github.com/appifyhub" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
+            <p class="copyright">2018–Present © AppifyHub</p>
         </div>
     </footer>
 
-    <!-- Scroll to top -->
     <button class="scroll-top" type="button" aria-label="Scroll to top">
-        <i data-lucide="chevron-up" aria-hidden="true"></i>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6" /></svg>
     </button>
 
-    <!-- Load scripts, in order -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/scripts.js"></script>
     <script type="module" src="js/cookieconsent-config.js" defer></script>
 
@@ -417,7 +367,7 @@
     </script>
     <script async type="text/plain" data-category="!analytics">
         gtag = function() { console.log("Allow cookies to enable Google Analytics"); };
-        
+
         console.log("Google Analytics is now disabled.");
     </script>
 </body>
