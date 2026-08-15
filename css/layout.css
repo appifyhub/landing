@@ -36,23 +36,6 @@ section {
   margin-left: calc(-1 * var(--spacing-normal));
 }
 
-.col-12,
-.col-sm-10,
-.col-md-6,
-.col-md-8,
-.col-md-10 {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: var(--spacing-normal);
-  padding-left: var(--spacing-normal);
-}
-
-.col-12 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
 .navbar {
   position: relative;
   display: flex;
@@ -73,11 +56,6 @@ section {
 .navbar-nav .nav-link {
   display: block;
   padding: 0.25rem 0;
-}
-
-.navbar-nav .dropdown-menu {
-  position: static;
-  float: none;
 }
 
 .navbar-collapse {
@@ -101,44 +79,17 @@ section {
   text-decoration: none;
 }
 
-.d-block {
-  display: block !important;
-}
-
-.d-inline-flex {
-  display: inline-flex !important;
-}
-
-.flex-row {
-  flex-direction: row !important;
-}
-
-.align-items-center {
-  align-items: center !important;
-}
-
 .ml-0 {
   margin-left: 0 !important;
-}
-
-.mt-2 {
-  margin-top: 0.5rem !important;
 }
 
 .mr-2 {
   margin-right: 0.5rem !important;
 }
 
-.ml-2 {
-  margin-left: 0.5rem !important;
-}
-
-.ml-4 {
-  margin-left: 2rem !important;
-}
-
-.mt-4 {
-  margin-top: 1.5rem !important;
+.px-4 {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
 }
 
 .mb-4 {
@@ -149,64 +100,18 @@ section {
   margin-top: 3rem !important;
 }
 
-.mb-5 {
-  margin-bottom: 3rem !important;
-}
-
-.pb-3,
-.py-3 {
-  padding-bottom: 1rem !important;
-}
-
-.py-3 {
-  padding-top: 1rem !important;
-}
-
-.pb-4,
-.py-4 {
-  padding-bottom: 1.5rem !important;
-}
-
-.py-4 {
-  padding-top: 1.5rem !important;
-}
-
-.pt-6 {
-  padding-top: 6rem !important;
-}
-
 .py-7 {
   padding-top: 9rem !important;
-}
-
-.pb-7,
-.py-7 {
   padding-bottom: 9rem !important;
 }
 
-.my-auto {
-  margin-top: auto !important;
-  margin-bottom: auto !important;
-}
-
-.mr-auto,
-.mx-auto {
-  margin-right: auto !important;
-}
-
-.ml-auto,
-.mx-auto {
+.ml-auto {
   margin-left: auto !important;
 }
 
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
-  }
-
-  .col-sm-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%;
   }
 }
 
@@ -223,29 +128,6 @@ section {
     max-width: 720px;
   }
 
-  .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  .col-md-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%;
-  }
-
-  .col-md-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%;
-  }
-
-  .py-md-0 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  .vh-md-100 {
-    height: 100vh;
-  }
 }
 
 @media (min-width: 800px) {
@@ -256,10 +138,6 @@ section {
 
   .navbar-expand-md .navbar-nav {
     flex-direction: row;
-  }
-
-  .navbar-expand-md .navbar-nav .dropdown-menu {
-    position: absolute;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
