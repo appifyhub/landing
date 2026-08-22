@@ -1268,17 +1268,7 @@
     <script type="module" src="js/cookieconsent-config.js" defer></script>
 
     <!-- Analytics -->
-    <script async type="text/plain" data-category="analytics"
-        src="https://www.googletagmanager.com/gtag/js?id=G-6MV2ZG3WDM"></script>
-    <script async type="text/plain" data-category="analytics">
-        console.log("Enabling Google Analytics…")
-        
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-6MV2ZG3WDM');
-    </script>
+    <script type="text/plain" data-src="js/analytics.js" data-category="analytics"></script>
     <script async type="text/plain" data-category="!analytics">
         gtag = function() { console.log("Allow cookies to enable Google Analytics"); };
 
