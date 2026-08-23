@@ -48,24 +48,24 @@
 </head>
 
 <body>
-    <header class="site-header smart-scroll">
+    <header class="site-header smart-scroll" data-analytics-area="header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-dark" aria-label="Primary navigation">
-                <a class="brand-link" href="#home" aria-label="AppifyHub home">
+                <a class="brand-link" href="#home" aria-label="AppifyHub home" data-analytics-id="header_home">
                     <img src="img/logo-text-white-small.png" height="50" alt="AppifyHub" />
                 </a>
                 <button class="navbar-toggler" type="button" aria-controls="navbarCollapse"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-analytics-id="header_menu" aria-expanded="false" aria-label="Toggle navigation">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16" /><path d="M4 6h16" /><path d="M4 18h16" /></svg>
                 </button>
                 <div class="navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#active">Active</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">All</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#active" data-analytics-id="header_active">Active</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects" data-analytics-id="header_projects">All</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" data-analytics-id="header_about">About</a></li>
                         <li class="nav-item">
                             <a class="nav-link cta" href="https://github.com/appifyhub" target="_blank"
-                                rel="noopener noreferrer">GitHub <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                                rel="noopener noreferrer" data-analytics-id="header_github">GitHub <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +74,7 @@
     </header>
 
     <main>
-        <section class="hero auroras section-angle bottom-right" id="home">
+        <section class="hero auroras section-angle bottom-right" id="home" data-analytics-section="home">
             <div class="container hero-inner">
                 <div class="aurora-1"></div>
                 <div class="aurora-2"></div>
@@ -90,11 +90,11 @@
                         links.
                     </p>
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="#active">
+                        <a class="btn btn-primary" href="#active" data-analytics-id="hero_active">
                             See what is active
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
                         </a>
-                        <a class="text-action" href="#projects">
+                        <a class="text-action" href="#projects" data-analytics-id="hero_projects">
                             Browse all projects
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
                         </a>
@@ -103,7 +103,7 @@
             </div>
         </section>
 
-        <section class="active-work section-angle bottom-left" id="active">
+        <section class="active-work section-angle bottom-left" id="active" data-analytics-section="active">
             <div class="container">
                 <div class="section-intro">
                     <p class="eyebrow">Active</p>
@@ -127,7 +127,8 @@
                         </p>
                         <p class="project-audience">Use it as-is, or shape it around your own usage patterns.</p>
                         <div class="project-actions">
-                            <a class="btn btn-primary" href="https://agent.appifyhub.com" target="_blank"
+                            <a class="btn btn-primary" href="https://agent.appifyhub.com"
+                                data-analytics-id="active_agent" target="_blank"
                                 rel="noopener noreferrer">Check it out <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </div>
                     </div>
@@ -135,7 +136,7 @@
             </div>
         </section>
 
-        <section class="project-types" aria-labelledby="types-title">
+        <section class="project-types" aria-labelledby="types-title" data-analytics-section="project_types">
             <div class="container">
                 <div class="section-intro section-intro-wide">
                     <p class="eyebrow">Browse by type</p>
@@ -143,19 +144,19 @@
                     <p>Apps to try, tools to work with, code and infrastructure to explore.</p>
                 </div>
                 <div class="type-list">
-                    <a class="type-item" href="#apps">
+                    <a class="type-item" href="#apps" data-analytics-id="project_types_apps">
                         <span><strong>Apps</strong><small>Things to install, try, and use.</small></span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
                     </a>
-                    <a class="type-item" href="#developer-tools">
+                    <a class="type-item" href="#developer-tools" data-analytics-id="project_types_developer_tools">
                         <span><strong>Developer Tools</strong><small>Utilities and services for building software.</small></span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
                     </a>
-                    <a class="type-item" href="#libraries">
+                    <a class="type-item" href="#libraries" data-analytics-id="project_types_libraries">
                         <span><strong>Libraries</strong><small>Code to reuse, adapt, or learn from.</small></span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
                     </a>
-                    <a class="type-item" href="#infrastructure">
+                    <a class="type-item" href="#infrastructure" data-analytics-id="project_types_infrastructure">
                         <span><strong>Infrastructure</strong><small>Deployment foundations, guides, terraform, helm, and more.</small></span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
                     </a>
@@ -163,7 +164,8 @@
             </div>
         </section>
 
-        <section class="project-catalog section-angle top-right bottom-right" id="projects">
+        <section class="project-catalog section-angle top-right bottom-right" id="projects"
+            data-analytics-section="projects">
             <div class="container">
                 <div class="catalog-heading">
                     <p class="eyebrow">All projects</p>
@@ -190,7 +192,8 @@
                     </div>
                 </div>
 
-                <section class="catalog-group" id="apps" aria-labelledby="apps-title">
+                <section class="catalog-group" id="apps" aria-labelledby="apps-title"
+                    data-analytics-section="apps">
                     <header class="catalog-group-heading">
                         <h3 id="apps-title">Apps</h3>
                         <span>Software people can use</span>
@@ -199,32 +202,33 @@
                         <article class="project-entry">
                             <div class="project-identity"><h4>The Agent</h4><span class="status status-active">Active</span></div>
                             <div class="project-detail"><p>A private AI assistant for connected conversations, tools, and personal workflows.</p><small>For people looking for an inspectable, adaptable assistant.</small></div>
-                            <a class="project-link" href="https://agent.appifyhub.com" target="_blank" rel="noopener noreferrer">Check it out <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://agent.appifyhub.com" target="_blank" rel="noopener noreferrer" data-analytics-id="apps_agent">Check it out <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                         <article class="project-entry">
                             <div class="project-identity"><h4>Material Wallpapers: Infinite</h4><span class="status status-complete">Complete</span></div>
                             <div class="project-detail"><p>An Android wallpaper app built around generated Material Design compositions.</p><small>For Android users who want an extensive wallpaper collection.</small></div>
-                            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.vaptim.wallpapers" target="_blank" rel="noopener noreferrer">Google Play <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.vaptim.wallpapers" target="_blank" rel="noopener noreferrer" data-analytics-id="apps_material_wallpapers">Google Play <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                         <article class="project-entry">
                             <div class="project-identity"><h4>Lorem Contacts</h4><span class="status status-complete">Complete</span></div>
                             <div class="project-detail"><p>An Android utility for filling a device with realistic placeholder contacts.</p><small>For developers and testers who need contact data quickly.</small></div>
-                            <a class="project-link" href="https://github.com/appifyhub/contacts-generator-android" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://github.com/appifyhub/contacts-generator-android" target="_blank" rel="noopener noreferrer" data-analytics-id="apps_lorem_contacts">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                         <article class="project-entry">
                             <div class="project-identity"><h4>Timecrypt</h4><span class="status status-complete">Complete</span></div>
                             <div class="project-detail"><p>A time-limited, encrypted, self-destructing messaging service.</p><small>This project is succeeded by Bitwarden Send.</small></div>
-                            <a class="project-link" href="https://github.com/appifyhub/timecrypt" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://github.com/appifyhub/timecrypt" target="_blank" rel="noopener noreferrer" data-analytics-id="apps_timecrypt">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                         <article class="project-entry">
                             <div class="project-identity"><h4>Picword</h4><span class="status status-complete">Complete</span></div>
                             <div class="project-detail"><p>A Windows utility that used a chosen photo as part of the device unlock flow.</p><small>This project is succeeded by Windows Hello.</small></div>
-                            <a class="project-link" href="https://picword-vapteam.en.download.it" target="_blank" rel="noopener noreferrer">Read more <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://picword-vapteam.en.download.it" target="_blank" rel="noopener noreferrer" data-analytics-id="apps_picword">Read more <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                     </div>
                 </section>
 
-                <section class="catalog-group" id="developer-tools" aria-labelledby="developer-tools-title">
+                <section class="catalog-group" id="developer-tools" aria-labelledby="developer-tools-title"
+                    data-analytics-section="developer_tools">
                     <header class="catalog-group-heading">
                         <h3 id="developer-tools-title">Developer Tools</h3>
                         <span>Software for building and operating software</span>
@@ -233,17 +237,18 @@
                         <article class="project-entry">
                             <div class="project-identity"><h4>Bootstrap API</h4><span class="status status-complete">Complete</span></div>
                             <div class="project-detail"><p>A hosted and self-hostable API foundation for common app backend capabilities.</p><small>For developers who need its existing API or source; available, but not under active development.</small></div>
-                            <a class="project-link" href="https://github.com/appifyhub/monolith/tree/main/sdk" target="_blank" rel="noopener noreferrer">Check SDKs <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://github.com/appifyhub/monolith/tree/main/sdk" target="_blank" rel="noopener noreferrer" data-analytics-id="developer_tools_bootstrap_api">Check SDKs <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                         <article class="project-entry">
                             <div class="project-identity"><h4>Code Stats</h4><span class="status status-archived">Archived</span></div>
                             <div class="project-detail"><p>A utility for inspecting and reporting source-code statistics.</p><small>For developers browsing the implementation as a reference.</small></div>
-                            <a class="project-link" href="https://github.com/appifyhub/code-stats" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://github.com/appifyhub/code-stats" target="_blank" rel="noopener noreferrer" data-analytics-id="developer_tools_code_stats">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                     </div>
                 </section>
 
-                <section class="catalog-group" id="libraries" aria-labelledby="libraries-title">
+                <section class="catalog-group" id="libraries" aria-labelledby="libraries-title"
+                    data-analytics-section="libraries">
                     <header class="catalog-group-heading">
                         <h3 id="libraries-title">Libraries</h3>
                         <span>Reusable building blocks for other projects</span>
@@ -252,32 +257,33 @@
                         <article class="project-entry">
                             <div class="project-identity"><h4>Actual Number Picker</h4><span class="status status-archived">Archived</span></div>
                             <div class="project-detail"><p>A customizable numeric picker component for Android interfaces.</p><small>For Android developers referencing a legacy UI component.</small></div>
-                            <a class="project-link" href="https://github.com/appifyhub/actual-number-picker" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://github.com/appifyhub/actual-number-picker" target="_blank" rel="noopener noreferrer" data-analytics-id="libraries_actual_number_picker">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                         <article class="project-entry">
                             <div class="project-identity"><h4>Circular Slider</h4><span class="status status-archived">Archived</span></div>
                             <div class="project-detail"><p>A circular slider control for Android applications.</p><small>For Android developers referencing a legacy interaction component.</small></div>
-                            <a class="project-link" href="https://github.com/appifyhub/circular-slider-android" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://github.com/appifyhub/circular-slider-android" target="_blank" rel="noopener noreferrer" data-analytics-id="libraries_circular_slider">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                         <article class="project-entry">
                             <div class="project-identity"><h4>Silly Android</h4><span class="status status-archived">Archived</span></div>
                             <div class="project-detail"><p>A collection of Android utilities and application helpers.</p><small>For Android developers exploring older implementation patterns.</small></div>
-                            <a class="project-link" href="https://github.com/appifyhub/silly-android" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://github.com/appifyhub/silly-android" target="_blank" rel="noopener noreferrer" data-analytics-id="libraries_silly_android">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                         <article class="project-entry">
                             <div class="project-identity"><h4>Blinking Image View</h4><span class="status status-archived">Archived</span></div>
                             <div class="project-detail"><p>An Android image-view component with configurable blinking behavior.</p><small>For Android developers referencing a focused legacy component.</small></div>
-                            <a class="project-link" href="https://github.com/appifyhub/blinking-image-view" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://github.com/appifyhub/blinking-image-view" target="_blank" rel="noopener noreferrer" data-analytics-id="libraries_blinking_image_view">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                         <article class="project-entry">
                             <div class="project-identity"><h4>Goose: Link Previews</h4><span class="status status-archived">Archived</span></div>
                             <div class="project-detail"><p>A maintained-at-the-time fork of the Goose article and metadata extractor.</p><small>For developers researching link-preview extraction code.</small></div>
-                            <a class="project-link" href="https://github.com/appifyhub/goose" target="_blank" rel="noopener noreferrer">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://github.com/appifyhub/goose" target="_blank" rel="noopener noreferrer" data-analytics-id="libraries_goose">View source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                     </div>
                 </section>
 
-                <section class="catalog-group" id="infrastructure" aria-labelledby="infrastructure-title">
+                <section class="catalog-group" id="infrastructure" aria-labelledby="infrastructure-title"
+                    data-analytics-section="infrastructure">
                     <header class="catalog-group-heading">
                         <h3 id="infrastructure-title">Infrastructure</h3>
                         <span>Deployment and hosting foundations</span>
@@ -286,19 +292,20 @@
                         <article class="project-entry">
                             <div class="project-identity"><h4>Terraform</h4><span class="status status-maintained">Maintained</span></div>
                             <div class="project-detail"><p>Terraform foundations for provisioning the infrastructure behind AppifyHub services.</p><small>For operators adapting an open starting point to their own environment.</small></div>
-                            <a class="project-link" href="https://github.com/appifyhub/terraform" target="_blank" rel="noopener noreferrer">Inspect source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://github.com/appifyhub/terraform" target="_blank" rel="noopener noreferrer" data-analytics-id="infrastructure_terraform">Inspect source <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                         <article class="project-entry">
                             <div class="project-identity"><h4>Helm</h4><span class="status status-maintained">Maintained</span></div>
                             <div class="project-detail"><p>Helm charts used to package and deploy services in Kubernetes.</p><small>For operators using or adapting the published deployment charts.</small></div>
-                            <a class="project-link" href="https://charts.appifyhub.com" target="_blank" rel="noopener noreferrer">Browse charts <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                            <a class="project-link" href="https://charts.appifyhub.com" target="_blank" rel="noopener noreferrer" data-analytics-id="infrastructure_helm">Browse charts <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                         </article>
                     </div>
                 </section>
             </div>
         </section>
 
-        <section class="project-history" aria-labelledby="history-title">
+        <section class="project-history" aria-labelledby="history-title"
+            data-analytics-section="project_history">
             <div class="container">
                 <div class="section-intro section-intro-wide">
                     <p class="eyebrow">Along the way</p>
@@ -314,7 +321,7 @@
             </div>
         </section>
 
-        <section class="about section-angle top-left bottom-left" id="about">
+        <section class="about section-angle top-left bottom-left" id="about" data-analytics-section="about">
             <div class="container about-layout">
                 <div class="section-intro">
                     <p class="eyebrow">About AppifyHub</p>
@@ -330,7 +337,8 @@
                         For source, issues, contribution notes, or support, follow the link on each project. GitHub has
                         the code and the latest project-specific information.
                     </p>
-                    <a class="text-action" href="https://github.com/appifyhub" target="_blank" rel="noopener noreferrer">
+                    <a class="text-action" href="https://github.com/appifyhub" target="_blank" rel="noopener noreferrer"
+                        data-analytics-id="about_github">
                         Explore AppifyHub on GitHub
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
                     </a>
@@ -339,23 +347,24 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" data-analytics-area="footer">
         <div class="container footer-layout">
             <div>
                 <img src="img/logo-text-white-small.png" height="38" alt="AppifyHub" />
                 <p>Open-source apps and the tools behind them.</p>
             </div>
             <nav aria-label="Footer navigation">
-                <a href="#projects">Projects</a>
-                <a href="https://github.com/appifyhub" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html">Terms</a>
+                <a href="#projects" data-analytics-id="footer_projects">Projects</a>
+                <a href="https://github.com/appifyhub" target="_blank" rel="noopener noreferrer" data-analytics-id="footer_github">GitHub</a>
+                <a href="privacy.html" data-analytics-id="footer_privacy">Privacy</a>
+                <a href="terms.html" data-analytics-id="footer_terms">Terms</a>
             </nav>
             <p class="copyright">2018–Present © AppifyHub</p>
         </div>
     </footer>
 
-    <button class="scroll-top" type="button" aria-label="Scroll to top">
+    <button class="scroll-top" type="button" aria-label="Scroll to top" data-analytics-id="scroll_top"
+        data-analytics-area="floating">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6" /></svg>
     </button>
 
