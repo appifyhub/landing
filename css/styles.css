@@ -419,7 +419,6 @@ a > code {
 .spotlight-marker img {
   width: clamp(5rem, 10vw, 9rem);
   height: auto;
-  filter: drop-shadow(0 0 1.75rem var(--highlight-dimmed-more));
 }
 
 .spotlight-copy {
